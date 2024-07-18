@@ -33,19 +33,21 @@ Authors: Julian Mittmann-Goetsch, Monica Wilson, Kai Jensen, Peter Mueller
             |-- df_optode_ap_long_filtered # L2 processed data from L1 (filtered df_optode_sa_long to only include slides 155-230 for the subpanel)
             |
             | df_tt_iris                   # L0 IRIS data from the tidal-tank experiment @JulianMiGoe
-            |- df_tt_a15                   # L1 processed data (filtered df_tt_iris, to include all segments from 0-15cm) - Used to create #Figure S1
+            |- df_tt_iris_aov              # L1 processed data (filtered df_tt_iris to exclude all NAs) - Used for statistical analysis
+            |- df_tt_stat_veg              # L1 processed data (filtered df_tt_iris to exclude all NAs & filtered to only include non-vegetated controls) - Used for statistical analysis
+            |- df_tt_a15                   # L1 processed data (filtered df_tt_iris, to include all segments from 0-15cm) - Used to create Figure S1
             |-- df_tt_a15_sum              # L2 processed data (summarised df_tt_a15 to the factor zone)
             |- df_tt_15                    # L1 processed data (filtered df_tt_iris, to only include bottom segment 15-20 cm) 
-            |-- df_tt_all_sum              # L2 processed data (summarised df_tt_15 by factor zone) - Used to create Barplot #Figure 3a
+            |-- df_tt_all_sum              # L2 processed data (summarised df_tt_15 by factor zone) - Used to create Barplot Figure 3a
             |-- df_tt_non_veg              # L2 processed data (filtered df_tt_15 to only include non-vegetated controls) 
-            |--- df_tt_non_veg_sum         # L3 processed data (summarised df_tt_non_veg by factor zone) - Used to create Barplot #Figure 3b
+            |--- df_tt_non_veg_sum         # L3 processed data (summarised df_tt_non_veg by factor zone) - Used to create Barplot Figure 3b
             |
             |- df_tt_dchange               # L1 IRIS data calculated (in Excel) as delta change values against non-vegetated controls from the tidal-tank experiment @JulianMiGoe
-            |-- df_tt_dchange_sum          # L2 processed data (summarised df_tt_dchange by factor zone, plant) - Used to create Barplot #Figure 3c
+            |-- df_tt_dchange_sum          # L2 processed data (summarised df_tt_dchange by factor zone, plant) - Used to create Barplot Figure 3c
             |
             | df_tt_ph                     # L0 pH data from the tidal-tank experiment @JulianMiGoe
-            |- df_tt_ph_sum                # L1 processed data (summarised df_tt_ph by factor zone, vegetation) - Used to create #Figure S2
-            
+            |- df_tt_ph_sum                # L1 processed data (summarised df_tt_ph by factor zone, vegetation) - Used to create Figure S2
+            |
             | df_field_iris                # IRIS data from the field study @JulianMiGoe
             | df_field_dchange             # IRIS data calculated as delta change values against non-vegetated controls from the field study @JulianMiGoe
             | df_field_ancillary           # ancilliary data from the field study. Calculated as means per plot @JulianMiGoe
