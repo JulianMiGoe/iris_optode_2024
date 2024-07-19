@@ -25,12 +25,12 @@ Authors: Julian Mittmann-Goetsch, Monica Wilson, Kai Jensen, Peter Mueller
 
       CODE structure and processing
             | df_optode_ap                 # L0 raw planar optode data of Atriplex portulacoides @Monica Wilson
-            |- df_optode_ap_long           # L1 processed data (long format table, inlcuding only ROI used for the analysis)
-            |-- df_optode_ap_long_filtered # L2 processed data from L1 (filtered df_optode_ap_long two slide numbers with drops below 0, slide 40 & slide 159, filtered to only include slides 155-230 for the subpanel)
+            |- df_optode_ap_long           # L1 processed data (filtered df_optode_sa to long format table, inlcuding only ROI used for the analysis) - Used to create Figure 4b
+            |-- df_optode_ap_long_filtered # L2 processed data from L1 (filtered df_optode_ap_long two slide numbers with drops below 0, slide 40 & slide 159, filtered to only include slides 155-230) - Used to create Figure 4b subpanel
             |
             | df_optode_sa                 # L0 raw planar optode data of Spartina anglica @Monica Wilson
-            |- df_optode_sa_long           # L1 processed data (long format table, inlcuding only ROI used for the analysis)
-            |-- df_optode_ap_long_filtered # L2 processed data from L1 (filtered df_optode_sa_long to only include slides 155-230 for the subpanel)
+            |- df_optode_sa_long           # L1 processed data (filtered *df_optode_ap* to long format table, inlcuding only ROI used for the analysis) - Used to create Figure 4a
+            |-- df_optode_ap_long_filtered # L2 processed data from L1 (filtered df_optode_sa_long to only include slides 155-230) - USed to create Figure 4a subpanel
             |
             | df_tt_iris                   # L0 IRIS data from the tidal-tank experiment @JulianMiGoe
             |- df_tt_iris_aov              # L1 processed data (filtered df_tt_iris to exclude all NAs) - Used for statistical analysis
