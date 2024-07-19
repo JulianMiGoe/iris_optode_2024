@@ -49,8 +49,8 @@ Authors: Julian Mittmann-Goetsch, Monica Wilson, Kai Jensen, Peter Mueller
             |- df_tt_ph_sum                # L1 processed data (summarised df_tt_ph by factor zone, vegetation) - Used to create Figure S2
             |
             | df_field_iris                # L0 raw IRIS data from the field study @JulianMiGoe
-            |- df_field_iris_aov           # L1 processed data (filtered df_field_iris to exclude all NAs) - Used for statistical analysis
             |- df_field_iris_long          # L1 processed data (transformed df_field_iris to long format) 
+            |-- df_field_iris_aov          # L2 processed data (filtered df_field_iris_long to exclude all NAs) - Used for statistical analysis
             |-- df_field_elevation         # L2 processed data (summarised df_field_iris_long by factors zone & depth) - Used for Figure S3
             |-- df_field_all               # L2 processed data (summarised df_field_iris_long by factor zone) - Used for Figure 5a
             |-- df_field_subset            # L2 processed data (filtered df_field_iris_long, intermediate dataframe) 
