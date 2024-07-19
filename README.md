@@ -21,7 +21,7 @@ Authors: Julian Mittmann-Goetsch, Monica Wilson, Kai Jensen, Peter Mueller
             |- df_DSK_iris                 # IRIS data from Diek-Sander-Koog field study (Mueller et al. 2020) @Peter Mueller 
             |
             |code                          # R code used for the analysis
-            |-  iris_optode.RMD            # reference files to be used in analysis
+            |-  iris_optode.RMD            # RMarkdown Skript 
 
       CODE structure and processing
             | df_optode_ap                 # L0 raw planar optode data of Atriplex portulacoides @Monica Wilson
