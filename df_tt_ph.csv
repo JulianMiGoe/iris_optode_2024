@@ -1,0 +1,121 @@
+Pot ID;depth;vegetation;zone;plant_species;pH_B;pH_Bctr;pH_Bcorrected
+t49;bottom-soil;veg;low-marsh;spartina anglica;7.38;7.15;7.23
+t35;bottom-soil;veg;low-marsh;spartina anglica;7.43;7.22;7.21
+t73;bottom-soil;veg;high-marsh;atriplex portulacoides;7.53;7.22;7.31
+t28;bottom-soil;veg;high-marsh;spartina anglica;7.54;7.22;7.32
+t21;bottom-soil;veg;low-marsh;elymus athericus;7.41;7.15;7.26
+t19;bottom-soil;veg;pioneer;elymus athericus;7.51;7.22;7.29
+t81;bottom-soil;non-veg;low-marsh;soil;7.31;7.15;7.16
+t86;bottom-soil;non-veg;low-marsh;soil;7.43;7.15;7.28
+t47;bottom-soil;veg;high-marsh;spartina anglica;7.38;7.15;7.23
+t65;bottom-soil;veg;pioneer;atriplex portulacoides;7.47;7.15;7.32
+t74;bottom-soil;veg;high-marsh;atriplex portulacoides;7.41;7.22;7.19
+t33;bottom-soil;veg;high-marsh;spartina anglica;7.36;7.22;7.14
+t14;bottom-soil;veg;pioneer;elymus athericus;7.46;7.22;7.24
+t90;bottom-soil;non-veg;high-marsh;soil;7.44;7.15;7.29
+t4;bottom-soil;veg;low-marsh;elymus athericus;7.52;7.22;7.3
+t82;bottom-soil;non-veg;low-marsh;soil;7.58;7.22;7.36
+t79;bottom-soil;non-veg;pioneer;soil;7.5;7.15;7.35
+t7;bottom-soil;veg;pioneer;elymus athericus;7.36;7.15;7.21
+t72;bottom-soil;veg;pioneer;atriplex portulacoides;7.56;7.15;7.41
+t85;bottom-soil;non-veg;pioneer;soil;7.38;7.15;7.23
+t76;bottom-soil;non-veg;high-marsh;soil;7.43;7.15;7.28
+t87;bottom-soil;non-veg;high-marsh;soil;7.46;7.22;7.24
+t80;bottom-soil;non-veg;pioneer;soil;7.54;7.15;7.39
+t89;bottom-soil;non-veg;pioneer;soil;7.65;7.15;7.5
+t2;bottom-soil;veg;high-marsh;elymus athericus;7.4;7.15;7.25
+t34;bottom-soil;veg;high-marsh;spartina anglica;7.41;7.15;7.26
+t62;bottom-soil;veg;low-marsh;atriplex portulacoides;7.31;7.15;7.16
+t68;bottom-soil;veg;low-marsh;atriplex portulacoides;7.38;7.15;7.23
+t8;bottom-soil;veg;low-marsh;elymus athericus;7.4;7.15;7.25
+t64;bottom-soil;veg;pioneer;atriplex portulacoides;7.48;7.15;7.33
+t48;bottom-soil;veg;pioneer;spartina anglica;7.7;7.22;7.48
+t77;bottom-soil;non-veg;high-marsh;soil;7.52;7.22;7.3
+t78;bottom-soil;non-veg;high-marsh;soil;7.54;7.22;7.32
+t83;bottom-soil;non-veg;low-marsh;soil;7.39;7.22;7.17
+t84;bottom-soil;non-veg;low-marsh;soil;7.55;7.22;7.33
+t88;bottom-soil;non-veg;pioneer;soil;7.59;7.22;7.37
+t51;bottom-soil;veg;high-marsh;atriplex portulacoides;7.56;7.22;7.34
+t61;bottom-soil;veg;high-marsh;atriplex portulacoides;7.43;7.22;7.21
+t71;bottom-soil;veg;high-marsh;atriplex portulacoides;7.46;7.22;7.24
+t11;bottom-soil;veg;high-marsh;elymus athericus;7.33;7.22;7.11
+t20;bottom-soil;veg;high-marsh;elymus athericus;7.44;7.22;7.22
+t5;bottom-soil;veg;high-marsh;elymus athericus;7.39;7.22;7.17
+t9;bottom-soil;veg;high-marsh;elymus athericus;7.43;7.22;7.21
+t44;bottom-soil;veg;high-marsh;spartina anglica;7.52;7.22;7.3
+t55;bottom-soil;veg;low-marsh;atriplex portulacoides;7.5;7.22;7.28
+t67;bottom-soil;veg;low-marsh;atriplex portulacoides;7.5;7.22;7.28
+t69;bottom-soil;veg;low-marsh;atriplex portulacoides;7.48;7.22;7.26
+t22;bottom-soil;veg;low-marsh;elymus athericus;7.49;7.22;7.27
+t23;bottom-soil;veg;low-marsh;elymus athericus;7.54;7.22;7.32
+t40;bottom-soil;veg;low-marsh;spartina anglica;7.61;7.22;7.39
+t42;bottom-soil;veg;low-marsh;spartina anglica;7.45;7.22;7.23
+t50;bottom-soil;veg;low-marsh;spartina anglica;7.24;7.22;7.02
+t59;bottom-soil;veg;pioneer;atriplex portulacoides;7.51;7.22;7.29
+t75;bottom-soil;veg;pioneer;atriplex portulacoides;7.5;7.22;7.28
+t24;bottom-soil;veg;pioneer;elymus athericus;7.64;7.22;7.42
+t25;bottom-soil;veg;pioneer;elymus athericus;7.48;7.22;7.26
+t27;bottom-soil;veg;pioneer;spartina anglica;7.47;7.22;7.25
+t41;bottom-soil;veg;pioneer;spartina anglica;7.58;7.22;7.36
+t45;bottom-soil;veg;pioneer;spartina anglica;7.44;7.22;7.22
+t46;bottom-soil;veg;pioneer;spartina anglica;7.48;7.22;7.26
+t49;top-soil;veg;low-marsh;spartina anglica;7.57;7.12;7.45
+t35;top-soil;veg;low-marsh;spartina anglica;7.59;7.12;7.47
+t73;top-soil;veg;high-marsh;atriplex portulacoides;7.63;7.12;7.51
+t28;top-soil;veg;high-marsh;spartina anglica;7.63;7.12;7.51
+t21;top-soil;veg;low-marsh;elymus athericus;7.64;7.12;7.52
+t19;top-soil;veg;pioneer;elymus athericus;7.65;7.12;7.53
+t81;top-soil;non-veg;low-marsh;soil;7.68;7.12;7.56
+t86;top-soil;non-veg;low-marsh;soil;7.72;7.12;7.6
+t47;top-soil;veg;high-marsh;spartina anglica;7.72;7.12;7.6
+t65;top-soil;veg;pioneer;atriplex portulacoides;7.74;7.12;7.62
+t74;top-soil;veg;high-marsh;atriplex portulacoides;7.74;7.12;7.62
+t33;top-soil;veg;high-marsh;spartina anglica;7.74;7.12;7.62
+t14;top-soil;veg;pioneer;elymus athericus;7.75;7.12;7.63
+t90;top-soil;non-veg;high-marsh;soil;7.76;7.12;7.64
+t4;top-soil;veg;low-marsh;elymus athericus;7.76;7.12;7.64
+t82;top-soil;non-veg;low-marsh;soil;7.82;7.12;7.7
+t79;top-soil;non-veg;pioneer;soil;7.83;7.12;7.71
+t7;top-soil;veg;pioneer;elymus athericus;7.83;7.12;7.71
+t72;top-soil;veg;pioneer;atriplex portulacoides;7.9;7.12;7.78
+t85;top-soil;non-veg;pioneer;soil;7.94;7.12;7.82
+t76;top-soil;non-veg;high-marsh;soil;7.4;6.75;7.65
+t87;top-soil;non-veg;high-marsh;soil;7.1;6.75;7.35
+t80;top-soil;non-veg;pioneer;soil;7.3;6.75;7.55
+t89;top-soil;non-veg;pioneer;soil;7.05;6.75;7.3
+t2;top-soil;veg;high-marsh;elymus athericus;7.43;6.75;7.68
+t34;top-soil;veg;high-marsh;spartina anglica;7.16;6.75;7.41
+t62;top-soil;veg;low-marsh;atriplex portulacoides;6.99;6.75;7.24
+t68;top-soil;veg;low-marsh;atriplex portulacoides;7.35;6.75;7.6
+t8;top-soil;veg;low-marsh;elymus athericus;7.04;6.75;7.29
+t64;top-soil;veg;pioneer;atriplex portulacoides;7.2;6.75;7.45
+t48;top-soil;veg;pioneer;spartina anglica;7.26;6.75;7.51
+t77;top-soil;non-veg;high-marsh;soil;7.24;6.75;7.49
+t78;top-soil;non-veg;high-marsh;soil;7.15;6.75;7.4
+t83;top-soil;non-veg;low-marsh;soil;7.22;6.75;7.47
+t84;top-soil;non-veg;low-marsh;soil;6.91;6.75;7.16
+t88;top-soil;non-veg;pioneer;soil;7.2;6.75;7.45
+t51;top-soil;veg;high-marsh;atriplex portulacoides;7.45;6.75;7.7
+t61;top-soil;veg;high-marsh;atriplex portulacoides;7.12;6.75;7.37
+t71;top-soil;veg;high-marsh;atriplex portulacoides;7.33;6.75;7.58
+t11;top-soil;veg;high-marsh;elymus athericus;6.86;6.75;7.11
+t20;top-soil;veg;high-marsh;elymus athericus;7.18;6.75;7.43
+t5;top-soil;veg;high-marsh;elymus athericus;7.09;6.75;7.34
+t9;top-soil;veg;high-marsh;elymus athericus;6.99;6.75;7.24
+t44;top-soil;veg;high-marsh;spartina anglica;7.41;6.75;7.66
+t55;top-soil;veg;low-marsh;atriplex portulacoides;7.02;6.75;7.27
+t67;top-soil;veg;low-marsh;atriplex portulacoides;7.07;6.75;7.32
+t69;top-soil;veg;low-marsh;atriplex portulacoides;7.28;6.75;7.53
+t22;top-soil;veg;low-marsh;elymus athericus;7;6.75;7.25
+t23;top-soil;veg;low-marsh;elymus athericus;7.1;6.75;7.35
+t40;top-soil;veg;low-marsh;spartina anglica;6.96;6.75;7.21
+t42;top-soil;veg;low-marsh;spartina anglica;7.11;6.75;7.36
+t50;top-soil;veg;low-marsh;spartina anglica;7.06;6.75;7.31
+t59;top-soil;veg;pioneer;atriplex portulacoides;7.28;6.75;7.53
+t75;top-soil;veg;pioneer;atriplex portulacoides;7.34;6.75;7.59
+t24;top-soil;veg;pioneer;elymus athericus;7.24;6.75;7.49
+t25;top-soil;veg;pioneer;elymus athericus;7.06;6.75;7.31
+t27;top-soil;veg;pioneer;spartina anglica;7.75;7.24;7.51
+t41;top-soil;veg;pioneer;spartina anglica;7.04;6.75;7.29
+t45;top-soil;veg;pioneer;spartina anglica;6.98;6.75;7.23
+t46;top-soil;veg;pioneer;spartina anglica;7.15;6.75;7.4

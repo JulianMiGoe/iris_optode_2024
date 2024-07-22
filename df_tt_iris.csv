@@ -1,0 +1,961 @@
+IRIS ID;Pot ID;Vegetation;Zone;Month;Plant;Depth;all_pix;pix_0;pix_1;pix_2;pix_3;abschnitt;areareduced
+10a;t42;veg;Low marsh;Aug;Spartina anglica;1;13339;8851;4488;0;0;1;0.336457006
+10a;t42;veg;Low marsh;Aug;Spartina anglica;2;13339;12283;1056;0;0;2;0.079166354
+10a;t42;veg;Low marsh;Aug;Spartina anglica;3;13339;12238;1093;0;8;3;0.081989348
+10a;t42;veg;Low marsh;Aug;Spartina anglica;4;13224;12955;269;0;0;4;
+10b;t42;veg;Low marsh;Aug;Spartina anglica;1;13690;11007;2683;0;0;1;0.195982469
+10b;t42;veg;Low marsh;Aug;Spartina anglica;2;13690;13169;521;0;0;2;0.038056976
+10b;t42;veg;Low marsh;Aug;Spartina anglica;3;13690;13621;69;0;0;3;0.005040175
+10b;t42;veg;Low marsh;Aug;Spartina anglica;4;13572;13491;72;0;9;4;
+11a;t47;veg;High marsh;Aug;Spartina anglica;1;13339;12228;1111;0;0;1;0.083289602
+11a;t47;veg;High marsh;Aug;Spartina anglica;2;13339;13235;104;0;0;2;0.007796686
+11a;t47;veg;High marsh;Aug;Spartina anglica;3;13339;12865;468;0;6;3;
+11a;t47;veg;High marsh;Aug;Spartina anglica;4;13224;13045;179;0;0;4;
+11b;t47;veg;High marsh;Aug;Spartina anglica;1;13456;11972;1484;0;0;1;0.110285375
+11b;t47;veg;High marsh;Aug;Spartina anglica;2;13456;13304;152;0;0;2;0.011296076
+11b;t47;veg;High marsh;Aug;Spartina anglica;3;13456;13411;39;0;6;3;
+11b;t47;veg;High marsh;Aug;Spartina anglica;4;13340;13213;126;0;1;4;
+12a;t28;veg;High marsh;Aug;Spartina anglica;1;13339;9819;3520;0;0;1;0.263887848
+12a;t28;veg;High marsh;Aug;Spartina anglica;2;13339;13324;15;0;0;2;0.001124522
+12a;t28;veg;High marsh;Aug;Spartina anglica;3;13339;13328;1;0;10;3;
+12a;t28;veg;High marsh;Aug;Spartina anglica;4;13224;13218;6;0;0;4;
+12b;t28;veg;High marsh;Aug;Spartina anglica;1;13690;13136;554;0;0;1;0.040467495
+12b;t28;veg;High marsh;Aug;Spartina anglica;2;13690;13481;209;0;0;2;0.015266618
+12b;t28;veg;High marsh;Aug;Spartina anglica;3;13690;13526;164;0;0;3;
+12b;t28;veg;High marsh;Aug;Spartina anglica;4;13572;13569;3;0;0;4;
+13a;t34;veg;High marsh;Aug;Spartina anglica;1;13690;11435;2255;0;0;1;0.164718773
+13a;t34;veg;High marsh;Aug;Spartina anglica;2;13690;13466;224;0;0;2;0.016362308
+13a;t34;veg;High marsh;Aug;Spartina anglica;3;13690;13320;370;0;0;3;0.027027027
+13a;t34;veg;High marsh;Aug;Spartina anglica;4;13572;13061;507;0;4;4;
+13b;t34;veg;High marsh;Aug;Spartina anglica;1;13924;12964;960;0;0;1;0.068945705
+13b;t34;veg;High marsh;Aug;Spartina anglica;2;13924;13647;277;0;0;2;0.019893709
+13b;t34;veg;High marsh;Aug;Spartina anglica;3;13924;13825;99;0;0;3;0.007110026
+13b;t34;veg;High marsh;Aug;Spartina anglica;4;13804;13054;750;0;0;4;
+14a;t33;veg;High marsh;Aug;Spartina anglica;1;13573;12851;722;0;0;1;0.053193841
+14a;t33;veg;High marsh;Aug;Spartina anglica;2;13573;13175;398;0;0;2;0.029322921
+14a;t33;veg;High marsh;Aug;Spartina anglica;3;13573;12525;1045;0;3;3;
+14a;t33;veg;High marsh;Aug;Spartina anglica;4;13456;12840;616;0;0;4;
+14b;t33;veg;High marsh;Aug;Spartina anglica;1;13807;12656;1151;0;0;1;0.083363511
+14b;t33;veg;High marsh;Aug;Spartina anglica;2;13807;12586;1221;0;0;2;0.088433403
+14b;t33;veg;High marsh;Aug;Spartina anglica;3;13807;13508;292;0;7;3;
+14b;t33;veg;High marsh;Aug;Spartina anglica;4;13688;12954;734;0;0;4;
+15a;t44;veg;High marsh;Aug;Spartina anglica;1;13690;12205;1485;0;0;1;0.108473338
+15a;t44;veg;High marsh;Aug;Spartina anglica;2;13690;13457;233;0;0;2;0.017019722
+15a;t44;veg;High marsh;Aug;Spartina anglica;3;13690;13134;556;0;0;3;0.040613587
+15a;t44;veg;High marsh;Aug;Spartina anglica;4;13572;12789;766;0;17;4;
+15b;t44;veg;High marsh;Aug;Spartina anglica;1;13924;13829;95;0;0;1;0.006822752
+15b;t44;veg;High marsh;Aug;Spartina anglica;2;13924;13489;435;0;0;2;0.031241023
+15b;t44;veg;High marsh;Aug;Spartina anglica;3;13924;13625;299;0;0;3;0.021473714
+15b;t44;veg;High marsh;Aug;Spartina anglica;4;13804;13743;40;0;21;4;
+16a;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13573;13272;301;0;0;1;0.02217638
+16a;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13573;13571;2;0;0;2;0.000147351
+16a;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13573;13386;187;0;0;3;
+16a;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13456;13450;6;0;0;4;
+16b;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;1;14041;13557;484;0;0;1;0.034470479
+16b;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;2;14041;13717;324;0;0;2;0.02307528
+16b;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;3;14041;12824;1216;0;1;3;
+16b;t72;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13920;13780;140;0;0;4;
+17a;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13690;9837;3853;0;0;1;0.281446311
+17a;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13690;13347;343;0;0;2;0.025054785
+17a;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13690;12832;840;0;18;3;
+17a;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13572;13479;89;0;4;4;
+17b;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13573;10873;2700;0;0;1;0.198924335
+17b;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13573;13573;0;0;0;2;0
+17b;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13573;13222;351;0;0;3;
+17b;t59;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13456;13442;12;0;2;4;
+18a;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13339;3517;9822;0;0;1;0.736337057
+18a;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13339;11896;1443;0;0;2;0.108179024
+18a;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13339;13083;256;0;0;3;0.019191843
+18a;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13224;12867;357;0;0;4;
+18b;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13456;4614;8842;0;0;1;0.657104637
+18b;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13456;13114;342;0;0;2;0.025416171
+18b;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13456;13427;29;0;0;3;0.002155172
+18b;t64;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13340;13023;291;0;26;4;
+19a;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13690;10872;2818;0;0;1;0.205843682
+19a;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13690;13643;47;0;0;2;0.003433163
+19a;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13690;11613;2077;0;0;3;0.151716581
+19a;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13572;11334;2236;0;2;4;
+19b;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13690;11368;2322;0;0;1;0.169612856
+19b;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13690;13577;113;0;0;2;0.0082542
+19b;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13690;13243;447;0;0;3;0.03265157
+19b;t75;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13572;12815;733;0;24;4;
+1a;t41;veg;Pioneer zone;Aug;Spartina anglica;1;13573;9978;3595;0;0;1;0.264864068
+1a;t41;veg;Pioneer zone;Aug;Spartina anglica;2;13573;13520;53;0;0;2;0.003904811
+1a;t41;veg;Pioneer zone;Aug;Spartina anglica;3;13573;13395;178;0;0;3;0.013114271
+1a;t41;veg;Pioneer zone;Aug;Spartina anglica;4;13456;11963;1435;0;58;4;
+1b;t41;veg;Pioneer zone;Aug;Spartina anglica;1;13456;9248;4208;0;0;1;0.312722949
+1b;t41;veg;Pioneer zone;Aug;Spartina anglica;2;13456;13441;15;0;0;2;0.001114744
+1b;t41;veg;Pioneer zone;Aug;Spartina anglica;3;13456;12922;534;0;0;3;0.039684899
+1b;t41;veg;Pioneer zone;Aug;Spartina anglica;4;13340;12503;786;0;51;4;
+20a;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;1;13807;5349;8458;0;0;1;0.612587818
+20a;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;2;13807;12720;1087;0;0;2;0.078728181
+20a;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;3;13807;13800;7;0;0;3;0.000506989
+20a;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13688;13555;133;0;0;4;
+20b;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;1;14041;4095;9946;0;0;1;0.708354106
+20b;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;2;14041;13567;474;0;0;2;0.033758279
+20b;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;3;14041;13907;134;0;0;3;0.00954348
+20b;t65;veg;Pioneer zone;Aug;Atriplex portulacoides;4;13920;12950;958;0;12;4;
+21a;t55;veg;Low marsh;Aug;Atriplex portulacoides;1;13807;10881;2926;0;0;1;0.211921489
+21a;t55;veg;Low marsh;Aug;Atriplex portulacoides;2;13807;13112;695;0;0;2;0.050336786
+21a;t55;veg;Low marsh;Aug;Atriplex portulacoides;3;13807;10715;3092;0;0;3;
+21a;t55;veg;Low marsh;Aug;Atriplex portulacoides;4;13688;13214;474;0;0;4;
+21b;t55;veg;Low marsh;Aug;Atriplex portulacoides;1;13807;11326;2481;0;0;1;0.179691461
+21b;t55;veg;Low marsh;Aug;Atriplex portulacoides;2;13807;13804;3;0;0;2;0.000217281
+21b;t55;veg;Low marsh;Aug;Atriplex portulacoides;3;13807;12971;836;0;0;3;
+21b;t55;veg;Low marsh;Aug;Atriplex portulacoides;4;13688;13687;1;0;0;4;
+22a;t69;veg;Low marsh;Aug;Atriplex portulacoides;1;13690;11255;2435;0;0;1;0.177867056
+22a;t69;veg;Low marsh;Aug;Atriplex portulacoides;2;13690;13432;258;0;0;2;0.018845873
+22a;t69;veg;Low marsh;Aug;Atriplex portulacoides;3;13690;11075;2609;0;6;3;
+22a;t69;veg;Low marsh;Aug;Atriplex portulacoides;4;13572;13381;187;0;4;4;
+22b;t69;veg;Low marsh;Aug;Atriplex portulacoides;1;13807;11807;2000;0;0;1;0.14485406
+22b;t69;veg;Low marsh;Aug;Atriplex portulacoides;2;13807;13534;273;0;0;2;0.019772579
+22b;t69;veg;Low marsh;Aug;Atriplex portulacoides;3;13807;10878;2929;0;0;3;
+22b;t69;veg;Low marsh;Aug;Atriplex portulacoides;4;13688;13335;345;0;8;4;
+23a;t67;veg;Low marsh;Aug;Atriplex portulacoides;1;13573;12190;1383;0;0;1;0.101893465
+23a;t67;veg;Low marsh;Aug;Atriplex portulacoides;2;13573;13214;359;0;0;2;0.026449569
+23a;t67;veg;Low marsh;Aug;Atriplex portulacoides;3;13573;13465;108;0;0;3;0.007956973
+23a;t67;veg;Low marsh;Aug;Atriplex portulacoides;4;13456;11666;1781;0;9;4;
+23b;t67;veg;Low marsh;Aug;Atriplex portulacoides;1;13690;10077;3613;0;0;1;0.263915267
+23b;t67;veg;Low marsh;Aug;Atriplex portulacoides;2;13690;13673;17;0;0;2;0.001241782
+23b;t67;veg;Low marsh;Aug;Atriplex portulacoides;3;13690;13073;617;0;0;3;0.045069394
+23b;t67;veg;Low marsh;Aug;Atriplex portulacoides;4;13572;11489;2041;0;42;4;
+24a;t68;veg;Low marsh;Aug;Atriplex portulacoides;1;13573;12865;708;0;0;1;0.052162381
+24a;t68;veg;Low marsh;Aug;Atriplex portulacoides;2;13573;13420;153;0;0;2;0.011272379
+24a;t68;veg;Low marsh;Aug;Atriplex portulacoides;3;13573;13403;169;0;1;3;0.012452107
+24a;t68;veg;Low marsh;Aug;Atriplex portulacoides;4;13456;12770;683;0;3;4;
+24b;t68;veg;Low marsh;Aug;Atriplex portulacoides;1;13690;9804;3886;0;0;1;0.28385683
+24b;t68;veg;Low marsh;Aug;Atriplex portulacoides;2;13690;13565;125;0;0;2;0.009130752
+24b;t68;veg;Low marsh;Aug;Atriplex portulacoides;3;13690;11931;1759;0;0;3;0.128487947
+24b;t68;veg;Low marsh;Aug;Atriplex portulacoides;4;13572;12149;1421;0;2;4;
+25a;t62;veg;Low marsh;Aug;Atriplex portulacoides;1;13690;12639;1051;0;0;1;0.076771366
+25a;t62;veg;Low marsh;Aug;Atriplex portulacoides;2;13690;13685;5;0;0;2;0.00036523
+25a;t62;veg;Low marsh;Aug;Atriplex portulacoides;3;13690;13631;59;0;0;3;0.004309715
+25a;t62;veg;Low marsh;Aug;Atriplex portulacoides;4;13572;12724;847;0;1;4;
+25b;t62;veg;Low marsh;Aug;Atriplex portulacoides;1;13690;11866;1824;0;0;1;0.133235939
+25b;t62;veg;Low marsh;Aug;Atriplex portulacoides;2;13690;13644;46;0;0;2;0.003360117
+25b;t62;veg;Low marsh;Aug;Atriplex portulacoides;3;13690;13665;25;0;0;3;0.00182615
+25b;t62;veg;Low marsh;Aug;Atriplex portulacoides;4;13572;12807;760;0;5;4;
+26a;t74;veg;High marsh;Aug;Atriplex portulacoides;1;13690;10207;3483;0;0;1;0.254419284
+26a;t74;veg;High marsh;Aug;Atriplex portulacoides;2;13690;13650;40;0;0;2;0.002921841
+26a;t74;veg;High marsh;Aug;Atriplex portulacoides;3;13690;13620;70;0;0;3;
+26a;t74;veg;High marsh;Aug;Atriplex portulacoides;4;13572;12917;655;0;0;4;
+26b;t74;veg;High marsh;Aug;Atriplex portulacoides;1;13456;9777;3679;0;0;1;0.273409631
+26b;t74;veg;High marsh;Aug;Atriplex portulacoides;2;13456;13056;400;0;0;2;0.029726516
+26b;t74;veg;High marsh;Aug;Atriplex portulacoides;3;13456;13406;47;0;3;3;
+26b;t74;veg;High marsh;Aug;Atriplex portulacoides;4;13340;13174;166;0;0;4;
+27a;t71;veg;High marsh;Aug;Atriplex portulacoides;1;13573;12019;1554;0;0;1;0.114492006
+27a;t71;veg;High marsh;Aug;Atriplex portulacoides;2;13573;13571;2;0;0;2;0.000147351
+27a;t71;veg;High marsh;Aug;Atriplex portulacoides;3;13573;13571;2;0;0;3;0.000147351
+27a;t71;veg;High marsh;Aug;Atriplex portulacoides;4;13456;13381;75;0;0;4;
+27b;t71;veg;High marsh;Aug;Atriplex portulacoides;1;13807;12197;1610;0;0;1;0.116607518
+27b;t71;veg;High marsh;Aug;Atriplex portulacoides;2;13807;13681;126;0;0;2;0.009125806
+27b;t71;veg;High marsh;Aug;Atriplex portulacoides;3;13807;13443;364;0;0;3;0.026363439
+27b;t71;veg;High marsh;Aug;Atriplex portulacoides;4;13688;13605;38;0;45;4;
+28a;t73;veg;High marsh;Aug;Atriplex portulacoides;1;13807;12124;1683;0;0;1;0.121894691
+28a;t73;veg;High marsh;Aug;Atriplex portulacoides;2;13807;13235;572;0;0;2;0.041428261
+28a;t73;veg;High marsh;Aug;Atriplex portulacoides;3;13807;13458;346;0;3;3;
+28a;t73;veg;High marsh;Aug;Atriplex portulacoides;4;13688;13083;605;0;0;4;
+28b;t73;veg;High marsh;Aug;Atriplex portulacoides;1;14041;13330;711;0;0;1;0.050637419
+28b;t73;veg;High marsh;Aug;Atriplex portulacoides;2;14041;13522;519;0;0;2;0.036963179
+28b;t73;veg;High marsh;Aug;Atriplex portulacoides;3;14041;13356;685;0;0;3;
+28b;t73;veg;High marsh;Aug;Atriplex portulacoides;4;13920;13646;274;0;0;4;
+29a;t51;veg;High marsh;Aug;Atriplex portulacoides;1;13456;11410;2046;0;0;1;0.15205113
+29a;t51;veg;High marsh;Aug;Atriplex portulacoides;2;13456;13455;1;0;0;2;7.43163E-05
+29a;t51;veg;High marsh;Aug;Atriplex portulacoides;3;13456;13449;3;0;4;3;0.000223015
+29a;t51;veg;High marsh;Aug;Atriplex portulacoides;4;13340;13340;0;0;0;4;
+29b;t51;veg;High marsh;Aug;Atriplex portulacoides;1;13690;11823;1867;0;0;1;0.136376917
+29b;t51;veg;High marsh;Aug;Atriplex portulacoides;2;13690;13636;54;0;0;2;0.003944485
+29b;t51;veg;High marsh;Aug;Atriplex portulacoides;3;13690;13642;48;0;0;3;0.003506209
+29b;t51;veg;High marsh;Aug;Atriplex portulacoides;4;13572;13278;278;0;16;4;
+2a;t46;veg;Pioneer zone;Aug;Spartina anglica;1;13807;12656;1151;0;0;1;0.083363511
+2a;t46;veg;Pioneer zone;Aug;Spartina anglica;2;13807;13708;99;0;0;2;0.007170276
+2a;t46;veg;Pioneer zone;Aug;Spartina anglica;3;13807;13065;742;0;0;3;
+2a;t46;veg;Pioneer zone;Aug;Spartina anglica;4;13688;13664;24;0;0;4;
+2b;t46;veg;Pioneer zone;Aug;Spartina anglica;1;13222;11166;2056;0;0;1;0.155498412
+2b;t46;veg;Pioneer zone;Aug;Spartina anglica;2;13222;13221;1;0;0;2;7.56315E-05
+2b;t46;veg;Pioneer zone;Aug;Spartina anglica;3;13222;13009;213;0;0;3;
+2b;t46;veg;Pioneer zone;Aug;Spartina anglica;4;13108;13008;92;0;8;4;
+30a;t61;veg;High marsh;Aug;Atriplex portulacoides;1;13573;13335;238;0;0;1;0.017534812
+30a;t61;veg;High marsh;Aug;Atriplex portulacoides;2;13573;13533;40;0;0;2;0.002947027
+30a;t61;veg;High marsh;Aug;Atriplex portulacoides;3;13573;12491;1082;0;0;3;
+30a;t61;veg;High marsh;Aug;Atriplex portulacoides;4;13456;11461;1995;0;0;4;
+30b;t61;veg;High marsh;Aug;Atriplex portulacoides;1;13690;12978;712;0;0;1;0.052008766
+30b;t61;veg;High marsh;Aug;Atriplex portulacoides;2;13690;13669;21;0;0;2;0.001533966
+30b;t61;veg;High marsh;Aug;Atriplex portulacoides;3;13690;13558;132;0;0;3;
+30b;t61;veg;High marsh;Aug;Atriplex portulacoides;4;13572;13317;255;0;0;4;
+31a;t7;veg;Pioneer zone;Aug;Elymus athericus;1;13690;10440;3250;0;0;1;0.237399562
+31a;t7;veg;Pioneer zone;Aug;Elymus athericus;2;13690;13690;0;0;0;2;0
+31a;t7;veg;Pioneer zone;Aug;Elymus athericus;3;13690;13384;306;0;0;3;
+31a;t7;veg;Pioneer zone;Aug;Elymus athericus;4;13572;13225;346;0;1;4;
+31b;t7;veg;Pioneer zone;Aug;Elymus athericus;1;13456;7049;6407;0;0;1;0.476144471
+31b;t7;veg;Pioneer zone;Aug;Elymus athericus;2;13456;13443;13;0;0;2;0.000966112
+31b;t7;veg;Pioneer zone;Aug;Elymus athericus;3;13456;12216;1240;0;0;3;
+31b;t7;veg;Pioneer zone;Aug;Elymus athericus;4;13340;13251;87;0;2;4;
+32a;t25;veg;Pioneer zone;Aug;Elymus athericus;1;13807;11575;2232;0;0;1;0.16165713
+32a;t25;veg;Pioneer zone;Aug;Elymus athericus;2;13807;13578;229;0;0;2;0.01658579
+32a;t25;veg;Pioneer zone;Aug;Elymus athericus;3;13807;11757;2050;0;0;3;
+32a;t25;veg;Pioneer zone;Aug;Elymus athericus;4;13688;12983;705;0;0;4;
+32b;t25;veg;Pioneer zone;Aug;Elymus athericus;1;13807;11288;2519;0;0;1;0.182443688
+32b;t25;veg;Pioneer zone;Aug;Elymus athericus;2;13807;13783;24;0;0;2;0.001738249
+32b;t25;veg;Pioneer zone;Aug;Elymus athericus;3;13807;13327;479;0;1;3;
+32b;t25;veg;Pioneer zone;Aug;Elymus athericus;4;13688;13558;129;0;1;4;
+33a;t19;veg;Pioneer zone;Aug;Elymus athericus;1;13807;8877;4930;0;0;1;0.357065257
+33a;t19;veg;Pioneer zone;Aug;Elymus athericus;2;13807;13552;255;0;0;2;0.018468893
+33a;t19;veg;Pioneer zone;Aug;Elymus athericus;3;13807;12992;814;0;1;3;
+33a;t19;veg;Pioneer zone;Aug;Elymus athericus;4;13688;13644;40;0;4;4;
+33b;t19;veg;Pioneer zone;Aug;Elymus athericus;1;13807;9975;3832;0;0;1;0.277540378
+33b;t19;veg;Pioneer zone;Aug;Elymus athericus;2;13807;13782;25;0;0;2;0.001810676
+33b;t19;veg;Pioneer zone;Aug;Elymus athericus;3;13807;13142;665;0;0;3;
+33b;t19;veg;Pioneer zone;Aug;Elymus athericus;4;13688;13608;79;0;1;4;
+34a;t14;veg;Pioneer zone;Aug;Elymus athericus;1;13339;12052;1287;0;0;1;0.096483994
+34a;t14;veg;Pioneer zone;Aug;Elymus athericus;2;13339;13279;60;0;0;2;0.004498088
+34a;t14;veg;Pioneer zone;Aug;Elymus athericus;3;13339;11064;2275;0;0;3;
+34a;t14;veg;Pioneer zone;Aug;Elymus athericus;4;13224;12917;307;0;0;4;
+34b;t14;veg;Pioneer zone;Aug;Elymus athericus;1;13573;11548;2025;0;0;1;0.149193251
+34b;t14;veg;Pioneer zone;Aug;Elymus athericus;2;13573;12591;982;0;0;2;0.072349517
+34b;t14;veg;Pioneer zone;Aug;Elymus athericus;3;13573;11111;2456;0;6;3;
+34b;t14;veg;Pioneer zone;Aug;Elymus athericus;4;13456;12800;654;0;2;4;
+35a;t24;veg;Pioneer zone;Aug;Elymus athericus;1;13339;8709;4630;0;0;1;0.347102481
+35a;t24;veg;Pioneer zone;Aug;Elymus athericus;2;13339;13021;318;0;0;2;0.023839868
+35a;t24;veg;Pioneer zone;Aug;Elymus athericus;3;13339;12704;635;0;0;3;0.047604768
+35a;t24;veg;Pioneer zone;Aug;Elymus athericus;4;13224;13110;114;0;0;4;
+35b;t24;veg;Pioneer zone;Aug;Elymus athericus;1;13573;10159;3414;0;0;1;0.25152877
+35b;t24;veg;Pioneer zone;Aug;Elymus athericus;2;13573;13557;16;0;0;2;0.001178811
+35b;t24;veg;Pioneer zone;Aug;Elymus athericus;3;13573;12975;598;0;0;3;0.044058056
+35b;t24;veg;Pioneer zone;Aug;Elymus athericus;4;13456;13247;207;0;2;4;
+36a;t21;veg;Low marsh;Aug;Elymus athericus;1;14041;13383;658;0;0;1;0.046862759
+36a;t21;veg;Low marsh;Aug;Elymus athericus;2;14041;11420;2621;0;0;2;
+36a;t21;veg;Low marsh;Aug;Elymus athericus;3;14041;13598;443;0;0;3;
+36a;t21;veg;Low marsh;Aug;Elymus athericus;4;13920;13244;676;0;0;4;
+36b;t21;veg;Low marsh;Aug;Elymus athericus;1;13924;13801;123;0;0;1;0.008833668
+36b;t21;veg;Low marsh;Aug;Elymus athericus;2;13924;12895;1029;0;0;2;
+36b;t21;veg;Low marsh;Aug;Elymus athericus;3;13924;13707;217;0;0;3;
+36b;t21;veg;Low marsh;Aug;Elymus athericus;4;13804;13502;302;0;0;4;
+37a;t23;veg;Low marsh;Aug;Elymus athericus;1;13690;10932;2758;0;0;1;0.20146092
+37a;t23;veg;Low marsh;Aug;Elymus athericus;2;13690;13558;132;0;0;2;0.009642075
+37a;t23;veg;Low marsh;Aug;Elymus athericus;3;13690;11846;1844;0;0;3;
+37a;t23;veg;Low marsh;Aug;Elymus athericus;4;13572;12096;1474;0;2;4;
+37b;t23;veg;Low marsh;Aug;Elymus athericus;1;13690;11935;1755;0;0;1;0.128195763
+37b;t23;veg;Low marsh;Aug;Elymus athericus;2;13690;10882;2808;0;0;2;0.205113221
+37b;t23;veg;Low marsh;Aug;Elymus athericus;3;13690;10384;3306;0;0;3;
+37b;t23;veg;Low marsh;Aug;Elymus athericus;4;13572;13072;500;0;0;4;
+38a;t4;veg;Low marsh;Aug;Elymus athericus;1;13690;12481;1209;0;0;1;0.088312637
+38a;t4;veg;Low marsh;Aug;Elymus athericus;2;13690;13185;505;0;0;2;0.03688824
+38a;t4;veg;Low marsh;Aug;Elymus athericus;3;13690;10504;3186;0;0;3;
+38a;t4;veg;Low marsh;Aug;Elymus athericus;4;13572;11974;1598;0;0;4;
+38b;t4;veg;Low marsh;Aug;Elymus athericus;1;13456;11838;1618;0;0;1;0.120243757
+38b;t4;veg;Low marsh;Aug;Elymus athericus;2;13456;13093;363;0;0;2;0.026976813
+38b;t4;veg;Low marsh;Aug;Elymus athericus;3;13456;11395;2045;0;16;3;
+38b;t4;veg;Low marsh;Aug;Elymus athericus;4;13340;11111;2226;0;3;4;
+39a;t22;veg;Low marsh;Aug;Elymus athericus;1;13690;13503;187;0;0;1;0.013659606
+39a;t22;veg;Low marsh;Aug;Elymus athericus;2;13690;13550;140;0;0;2;0.010226443
+39a;t22;veg;Low marsh;Aug;Elymus athericus;3;13690;11689;1996;0;5;3;
+39a;t22;veg;Low marsh;Aug;Elymus athericus;4;13572;13534;33;0;5;4;
+39b;t22;veg;Low marsh;Aug;Elymus athericus;1;13924;10940;2984;0;0;1;0.214306234
+39b;t22;veg;Low marsh;Aug;Elymus athericus;2;13924;13023;901;0;0;2;0.064708417
+39b;t22;veg;Low marsh;Aug;Elymus athericus;3;13924;10394;3523;0;7;3;
+39b;t22;veg;Low marsh;Aug;Elymus athericus;4;13804;13607;189;0;8;4;
+3a;t48;veg;Pioneer zone;Aug;Spartina anglica;1;13690;11521;2169;0;0;1;0.158436815
+3a;t48;veg;Pioneer zone;Aug;Spartina anglica;2;13690;13685;5;0;0;2;0.00036523
+3a;t48;veg;Pioneer zone;Aug;Spartina anglica;3;13690;13621;69;0;0;3;0.005040175
+3a;t48;veg;Pioneer zone;Aug;Spartina anglica;4;13572;12821;751;0;0;4;
+3b;t48;veg;Pioneer zone;Aug;Spartina anglica;1;14041;10753;3288;0;0;1;0.234171355
+3b;t48;veg;Pioneer zone;Aug;Spartina anglica;2;14041;13938;103;0;0;2;0.00733566
+3b;t48;veg;Pioneer zone;Aug;Spartina anglica;3;14041;13102;939;0;0;3;0.066875579
+3b;t48;veg;Pioneer zone;Aug;Spartina anglica;4;13920;12927;989;0;4;4;
+40a;t8;veg;Low marsh;Aug;Elymus athericus;1;13807;10039;3768;0;0;1;0.272905048
+40a;t8;veg;Low marsh;Aug;Elymus athericus;2;13807;13036;771;0;0;2;0.05584124
+40a;t8;veg;Low marsh;Aug;Elymus athericus;3;13807;13494;313;0;0;3;0.02266966
+40a;t8;veg;Low marsh;Aug;Elymus athericus;4;13688;11920;1765;0;3;4;
+40b;t8;veg;Low marsh;Aug;Elymus athericus;1;13807;6505;7302;0;0;1;0.528862171
+40b;t8;veg;Low marsh;Aug;Elymus athericus;2;13807;13716;91;0;0;2;0.00659086
+40b;t8;veg;Low marsh;Aug;Elymus athericus;3;13807;11513;2294;0;0;3;0.166147606
+40b;t8;veg;Low marsh;Aug;Elymus athericus;4;13688;10356;3329;0;3;4;
+41a;t9;veg;High marsh;Aug;Elymus athericus;1;13573;12655;918;0;0;1;0.067634274
+41a;t9;veg;High marsh;Aug;Elymus athericus;2;13573;13174;399;0;0;2;0.029396596
+41a;t9;veg;High marsh;Aug;Elymus athericus;3;13573;13120;453;0;0;3;
+41a;t9;veg;High marsh;Aug;Elymus athericus;4;13456;12623;821;0;12;4;
+41b;t9;veg;High marsh;Aug;Elymus athericus;1;13807;13214;593;0;0;1;0.042949229
+41b;t9;veg;High marsh;Aug;Elymus athericus;2;13807;12770;1037;0;0;2;0.07510683
+41b;t9;veg;High marsh;Aug;Elymus athericus;3;13807;12182;1625;0;0;3;
+41b;t9;veg;High marsh;Aug;Elymus athericus;4;13688;12924;753;0;11;4;
+42a;t2;veg;High marsh;Aug;Elymus athericus;1;13456;12738;718;0;0;1;0.053359096
+42a;t2;veg;High marsh;Aug;Elymus athericus;2;13456;13407;49;0;0;2;0.003641498
+42a;t2;veg;High marsh;Aug;Elymus athericus;3;13456;13245;211;0;0;3;0.015680737
+42a;t2;veg;High marsh;Aug;Elymus athericus;4;13340;12487;851;0;2;4;
+42b;t2;veg;High marsh;Aug;Elymus athericus;1;13456;9327;4129;0;0;1;0.306851962
+42b;t2;veg;High marsh;Aug;Elymus athericus;2;13456;12840;616;0;0;2;0.045778835
+42b;t2;veg;High marsh;Aug;Elymus athericus;3;13456;11888;1568;0;0;3;0.116527943
+42b;t2;veg;High marsh;Aug;Elymus athericus;4;13340;11290;2050;0;0;4;
+43a;t20;veg;High marsh;Aug;Elymus athericus;1;13807;11110;2697;0;0;1;0.195335699
+43a;t20;veg;High marsh;Aug;Elymus athericus;2;13807;12975;832;0;0;2;0.060259289
+43a;t20;veg;High marsh;Aug;Elymus athericus;3;13807;12722;1085;0;0;3;
+43a;t20;veg;High marsh;Aug;Elymus athericus;4;13688;13072;612;0;4;4;
+43b;t20;veg;High marsh;Aug;Elymus athericus;1;13573;12621;952;0;0;1;0.070139247
+43b;t20;veg;High marsh;Aug;Elymus athericus;2;13573;13543;30;0;0;2;0.00221027
+43b;t20;veg;High marsh;Aug;Elymus athericus;3;13573;13176;385;0;12;3;
+43b;t20;veg;High marsh;Aug;Elymus athericus;4;13456;13439;13;0;4;4;
+44a;t5;veg;High marsh;Aug;Elymus athericus;1;13690;13201;489;0;0;1;0.035719503
+44a;t5;veg;High marsh;Aug;Elymus athericus;2;13690;13549;141;0;0;2;0.010299489
+44a;t5;veg;High marsh;Aug;Elymus athericus;3;13690;13574;113;0;3;3;
+44a;t5;veg;High marsh;Aug;Elymus athericus;4;13572;13570;2;0;0;4;
+44b;t5;veg;High marsh;Aug;Elymus athericus;1;13924;13376;548;0;0;1;0.039356507
+44b;t5;veg;High marsh;Aug;Elymus athericus;2;13924;13882;42;0;0;2;0.003016375
+44b;t5;veg;High marsh;Aug;Elymus athericus;3;13924;13374;549;0;1;3;
+44b;t5;veg;High marsh;Aug;Elymus athericus;4;13804;13712;92;0;0;4;
+45a;t11;veg;High marsh;Aug;Elymus athericus;1;13807;13377;422;0;8;1;0.030581926
+45a;t11;veg;High marsh;Aug;Elymus athericus;2;13807;13403;404;0;0;2;0.02926052
+45a;t11;veg;High marsh;Aug;Elymus athericus;3;13807;13485;321;0;1;3;
+45a;t11;veg;High marsh;Aug;Elymus athericus;4;13688;13483;168;0;37;4;
+45b;t11;veg;High marsh;Aug;Elymus athericus;1;13339;12995;344;0;0;1;0.02578904
+45b;t11;veg;High marsh;Aug;Elymus athericus;2;13339;12482;857;0;0;2;0.064247695
+45b;t11;veg;High marsh;Aug;Elymus athericus;3;13339;13022;316;0;1;3;
+45b;t11;veg;High marsh;Aug;Elymus athericus;4;13224;13029;195;0;0;4;
+46a;t85;non-veg;Pioneer zone;Aug;non-vegetated;1;13690;10988;2702;0;0;1;0.197370343
+46a;t85;non-veg;Pioneer zone;Aug;non-vegetated;2;13690;13582;108;0;0;2;0.00788897
+46a;t85;non-veg;Pioneer zone;Aug;non-vegetated;3;13690;13454;236;0;0;3;0.01723886
+46a;t85;non-veg;Pioneer zone;Aug;non-vegetated;4;13572;12675;897;0;0;4;
+46b;t85;non-veg;Pioneer zone;Aug;non-vegetated;1;13807;9977;3830;0;0;1;0.277395524
+46b;t85;non-veg;Pioneer zone;Aug;non-vegetated;2;13807;13753;54;0;0;2;0.00391106
+46b;t85;non-veg;Pioneer zone;Aug;non-vegetated;3;13807;12700;1107;0;0;3;0.080176722
+46b;t85;non-veg;Pioneer zone;Aug;non-vegetated;4;13688;13359;329;0;0;4;
+47a;t80;non-veg;Pioneer zone;Aug;non-vegetated;1;13690;12987;703;0;0;1;0.051351351
+47a;t80;non-veg;Pioneer zone;Aug;non-vegetated;2;13690;13197;493;0;0;2;0.036011687
+47a;t80;non-veg;Pioneer zone;Aug;non-vegetated;3;13690;11933;1753;0;4;3;
+47a;t80;non-veg;Pioneer zone;Aug;non-vegetated;4;13572;10837;2729;0;6;4;
+47b;t80;non-veg;Pioneer zone;Aug;non-vegetated;1;13456;12155;1301;0;0;1;0.096685493
+47b;t80;non-veg;Pioneer zone;Aug;non-vegetated;2;13456;13371;85;0;0;2;0.006316885
+47b;t80;non-veg;Pioneer zone;Aug;non-vegetated;3;13456;12597;856;0;3;3;
+47b;t80;non-veg;Pioneer zone;Aug;non-vegetated;4;13340;13029;311;0;0;4;
+48a;t79;non-veg;Pioneer zone;Aug;non-vegetated;1;13924;11536;2388;0;0;1;0.171502442
+48a;t79;non-veg;Pioneer zone;Aug;non-vegetated;2;13924;13911;13;0;0;2;0.00093364
+48a;t79;non-veg;Pioneer zone;Aug;non-vegetated;3;13924;13864;60;0;0;3;0.004309107
+48a;t79;non-veg;Pioneer zone;Aug;non-vegetated;4;13804;12689;1115;0;0;4;
+48b;t79;non-veg;Pioneer zone;Aug;non-vegetated;1;13924;10640;3284;0;0;1;0.235851767
+48b;t79;non-veg;Pioneer zone;Aug;non-vegetated;2;13924;13297;627;0;0;2;0.045030164
+48b;t79;non-veg;Pioneer zone;Aug;non-vegetated;3;13924;13053;871;0;0;3;0.062553864
+48b;t79;non-veg;Pioneer zone;Aug;non-vegetated;4;13804;12310;1494;0;0;4;
+49a;t88;non-veg;Pioneer zone;Aug;non-vegetated;1;13339;9983;3356;0;0;1;0.251593073
+49a;t88;non-veg;Pioneer zone;Aug;non-vegetated;2;13339;10166;3173;0;0;2;0.237873904
+49a;t88;non-veg;Pioneer zone;Aug;non-vegetated;3;13339;9585;3754;0;0;3;0.281430392
+49a;t88;non-veg;Pioneer zone;Aug;non-vegetated;4;13224;10664;2560;0;0;4;
+49b;t88;non-veg;Pioneer zone;Aug;non-vegetated;1;13690;10344;3346;0;0;1;0.24441198
+49b;t88;non-veg;Pioneer zone;Aug;non-vegetated;2;13690;13554;136;0;0;2;0.009934259
+49b;t88;non-veg;Pioneer zone;Aug;non-vegetated;3;13690;13286;404;0;0;3;0.029510592
+49b;t88;non-veg;Pioneer zone;Aug;non-vegetated;4;13572;13036;535;0;1;4;
+4a;t45;veg;Pioneer zone;Aug;Spartina anglica;1;13690;9161;4529;0;0;1;0.33082542
+4a;t45;veg;Pioneer zone;Aug;Spartina anglica;2;13690;12011;1679;0;0;2;0.122644266
+4a;t45;veg;Pioneer zone;Aug;Spartina anglica;3;13690;12885;798;0;7;3;
+4a;t45;veg;Pioneer zone;Aug;Spartina anglica;4;13572;13572;0;0;0;4;
+4b;t45;veg;Pioneer zone;Aug;Spartina anglica;1;14161;11932;2229;0;0;1;0.157404138
+4b;t45;veg;Pioneer zone;Aug;Spartina anglica;2;14161;14038;123;0;0;2;0.008685827
+4b;t45;veg;Pioneer zone;Aug;Spartina anglica;3;14161;14048;111;0;2;3;
+4b;t45;veg;Pioneer zone;Aug;Spartina anglica;4;13800;13761;30;0;9;4;
+50a;t89;non-veg;Pioneer zone;Aug;non-vegetated;1;13573;11178;2395;0;0;1;0.176453253
+50a;t89;non-veg;Pioneer zone;Aug;non-vegetated;2;13573;13443;130;0;0;2;0.009577838
+50a;t89;non-veg;Pioneer zone;Aug;non-vegetated;3;13573;13307;266;0;0;3;0.019597731
+50a;t89;non-veg;Pioneer zone;Aug;non-vegetated;4;13456;12945;511;0;0;4;
+50b;t89;non-veg;Pioneer zone;Aug;non-vegetated;1;14041;10286;3755;0;0;1;0.267431095
+50b;t89;non-veg;Pioneer zone;Aug;non-vegetated;2;14041;12659;1382;0;0;2;0.098426038
+50b;t89;non-veg;Pioneer zone;Aug;non-vegetated;3;14041;12111;1930;0;0;3;0.137454597
+50b;t89;non-veg;Pioneer zone;Aug;non-vegetated;4;13920;12176;1744;0;0;4;
+51a;t82;non-veg;Low marsh;Aug;non-vegetated;1;13924;10117;3807;0;0;1;0.273412812
+51a;t82;non-veg;Low marsh;Aug;non-vegetated;2;13924;13575;349;0;0;2;0.025064637
+51a;t82;non-veg;Low marsh;Aug;non-vegetated;3;13924;13705;219;0;0;3;0.015728239
+51a;t82;non-veg;Low marsh;Aug;non-vegetated;4;13804;12816;985;0;3;4;
+51b;t82;non-veg;Low marsh;Aug;non-vegetated;1;13690;10128;3562;0;0;1;0.26018992
+51b;t82;non-veg;Low marsh;Aug;non-vegetated;2;13690;13689;1;0;0;2;7.3046E-05
+51b;t82;non-veg;Low marsh;Aug;non-vegetated;3;13690;13684;6;0;0;3;0.000438276
+51b;t82;non-veg;Low marsh;Aug;non-vegetated;4;13572;13251;320;0;1;4;
+52a;t84;non-veg;Low marsh;Aug;non-vegetated;1;13924;12721;1203;0;0;1;0.086397587
+52a;t84;non-veg;Low marsh;Aug;non-vegetated;2;13924;13916;8;0;0;2;0.000574548
+52a;t84;non-veg;Low marsh;Aug;non-vegetated;3;13924;13812;112;0;0;3;0.008043666
+52a;t84;non-veg;Low marsh;Aug;non-vegetated;4;13804;13084;709;0;11;4;
+52b;t84;non-veg;Low marsh;Aug;non-vegetated;1;13573;12146;1427;0;0;1;0.105135195
+52b;t84;non-veg;Low marsh;Aug;non-vegetated;2;13573;12465;1108;0;0;2;0.081632653
+52b;t84;non-veg;Low marsh;Aug;non-vegetated;3;13573;12181;1392;0;0;3;0.102556546
+52b;t84;non-veg;Low marsh;Aug;non-vegetated;4;13456;11357;2088;0;11;4;
+53a;t81;non-veg;Low marsh;Aug;non-vegetated;1;13807;8349;5458;0;0;1;0.395306728
+53a;t81;non-veg;Low marsh;Aug;non-vegetated;2;13807;13801;6;0;0;2;0.000434562
+53a;t81;non-veg;Low marsh;Aug;non-vegetated;3;13807;13661;146;0;0;3;0.010574346
+53a;t81;non-veg;Low marsh;Aug;non-vegetated;4;13688;11884;1790;0;14;4;
+53b;t81;non-veg;Low marsh;Aug;non-vegetated;1;13573;7131;6442;0;0;1;0.474618728
+53b;t81;non-veg;Low marsh;Aug;non-vegetated;2;13573;13557;16;0;0;2;0.001178811
+53b;t81;non-veg;Low marsh;Aug;non-vegetated;3;13573;13330;243;0;0;3;0.01790319
+53b;t81;non-veg;Low marsh;Aug;non-vegetated;4;13456;11407;2049;0;0;4;
+54a;t83;non-veg;Low marsh;Aug;non-vegetated;1;13573;7107;6466;0;0;1;0.476386945
+54a;t83;non-veg;Low marsh;Aug;non-vegetated;2;13573;13536;37;0;0;2;0.002726
+54a;t83;non-veg;Low marsh;Aug;non-vegetated;3;13573;12123;1450;0;0;3;0.106829736
+54a;t83;non-veg;Low marsh;Aug;non-vegetated;4;13456;12125;1331;0;0;4;
+54b;t83;non-veg;Low marsh;Aug;non-vegetated;1;13924;7228;6696;0;0;1;0.480896294
+54b;t83;non-veg;Low marsh;Aug;non-vegetated;2;13924;13746;178;0;0;2;0.012783683
+54b;t83;non-veg;Low marsh;Aug;non-vegetated;3;13924;13381;543;0;0;3;0.038997415
+54b;t83;non-veg;Low marsh;Aug;non-vegetated;4;13804;12225;1578;0;1;4;
+55a;t86;non-veg;Low marsh;Aug;non-vegetated;1;13690;8662;5028;0;0;1;0.367275383
+55a;t86;non-veg;Low marsh;Aug;non-vegetated;2;13690;13661;29;0;0;2;0.002118335
+55a;t86;non-veg;Low marsh;Aug;non-vegetated;3;13690;13565;125;0;0;3;0.009130752
+55a;t86;non-veg;Low marsh;Aug;non-vegetated;4;13572;12227;1336;0;9;4;
+55b;t86;non-veg;Low marsh;Aug;non-vegetated;1;13690;9150;4540;0;0;1;0.331628926
+55b;t86;non-veg;Low marsh;Aug;non-vegetated;2;13690;13584;106;0;0;2;0.007742878
+55b;t86;non-veg;Low marsh;Aug;non-vegetated;3;13690;13528;162;0;0;3;0.011833455
+55b;t86;non-veg;Low marsh;Aug;non-vegetated;4;13572;11473;2097;0;2;4;
+56a;t87;non-veg;High marsh;Aug;non-vegetated;1;13807;11225;2582;0;0;1;0.187006591
+56a;t87;non-veg;High marsh;Aug;non-vegetated;2;13807;13559;248;0;0;2;0.017961903
+56a;t87;non-veg;High marsh;Aug;non-vegetated;3;13807;13799;8;0;0;3;0.000579416
+56a;t87;non-veg;High marsh;Aug;non-vegetated;4;13688;12383;1304;0;1;4;
+56b;t87;non-veg;High marsh;Aug;non-vegetated;1;13807;10772;3035;0;0;1;0.219816035
+56b;t87;non-veg;High marsh;Aug;non-vegetated;2;13807;13708;99;0;0;2;0.007170276
+56b;t87;non-veg;High marsh;Aug;non-vegetated;3;13807;13762;45;0;0;3;0.003259216
+56b;t87;non-veg;High marsh;Aug;non-vegetated;4;13688;13429;259;0;0;4;
+57a;t76;non-veg;High marsh;Aug;non-vegetated;1;13456;11169;2287;0;0;1;0.169961356
+57a;t76;non-veg;High marsh;Aug;non-vegetated;2;13456;13293;163;0;0;2;0.012113555
+57a;t76;non-veg;High marsh;Aug;non-vegetated;3;13456;13396;60;0;0;3;0.004458977
+57a;t76;non-veg;High marsh;Aug;non-vegetated;4;13340;12959;187;0;194;4;
+57b;t76;non-veg;High marsh;Aug;non-vegetated;1;13690;12291;1399;0;0;1;0.102191381
+57b;t76;non-veg;High marsh;Aug;non-vegetated;2;13690;13640;50;0;0;2;0.003652301
+57b;t76;non-veg;High marsh;Aug;non-vegetated;3;13690;13676;14;0;0;3;0.001022644
+57b;t76;non-veg;High marsh;Aug;non-vegetated;4;13572;12932;638;0;2;4;
+58a;t90;non-veg;High marsh;Aug;non-vegetated;1;13807;11588;2219;0;0;1;0.160715579
+58a;t90;non-veg;High marsh;Aug;non-vegetated;2;13807;13246;561;0;0;2;0.040631564
+58a;t90;non-veg;High marsh;Aug;non-vegetated;3;13807;12561;1244;0;2;3;
+58a;t90;non-veg;High marsh;Aug;non-vegetated;4;13688;12048;1636;0;4;4;
+58b;t90;non-veg;High marsh;Aug;non-vegetated;1;13573;11940;1633;0;0;1;0.120312385
+58b;t90;non-veg;High marsh;Aug;non-vegetated;2;13573;13520;53;0;0;2;0.003904811
+58b;t90;non-veg;High marsh;Aug;non-vegetated;3;13573;13241;332;0;0;3;
+58b;t90;non-veg;High marsh;Aug;non-vegetated;4;13456;11271;2183;0;2;4;
+59a;t77;non-veg;High marsh;Aug;non-vegetated;1;13807;12130;1677;0;0;1;0.121460129
+59a;t77;non-veg;High marsh;Aug;non-vegetated;2;13807;12834;973;0;0;2;0.0704715
+59a;t77;non-veg;High marsh;Aug;non-vegetated;3;13807;10370;3437;0;0;3;0.248931701
+59a;t77;non-veg;High marsh;Aug;non-vegetated;4;13573;13131;442;0;0;1;0.03256465
+59b;t77;non-veg;High marsh;Aug;non-vegetated;1;13573;13568;5;0;0;2;
+59b;t77;non-veg;High marsh;Aug;non-vegetated;2;13573;12821;752;0;0;3;0.055404111
+59b;t77;non-veg;High marsh;Aug;non-vegetated;3;13456;12603;829;0;24;4;0.061718285
+59b;t77;non-veg;High marsh;Aug;non-vegetated;4;13456;11586;1851;19;0;4;
+5a;t27;veg;Pioneer zone;Aug;Spartina anglica;1;13573;7311;6262;0;0;1;0.461357106
+5a;t27;veg;Pioneer zone;Aug;Spartina anglica;2;13573;11504;2069;0;0;2;0.152434981
+5a;t27;veg;Pioneer zone;Aug;Spartina anglica;3;13573;11679;1894;0;0;3;0.139541737
+5a;t27;veg;Pioneer zone;Aug;Spartina anglica;4;13456;12161;1295;0;0;4;
+5b;t27;veg;Pioneer zone;Aug;Spartina anglica;1;14041;9281;4760;0;0;1;0.339007193
+5b;t27;veg;Pioneer zone;Aug;Spartina anglica;2;14041;13957;84;0;0;2;0.00598248
+5b;t27;veg;Pioneer zone;Aug;Spartina anglica;3;14041;13974;67;0;0;3;0.00477174
+5b;t27;veg;Pioneer zone;Aug;Spartina anglica;4;13920;12715;1171;0;34;4;
+60a;t78;non-veg;High marsh;Aug;non-vegetated;1;13924;13732;192;0;0;1;0.013789141
+60a;t78;non-veg;High marsh;Aug;non-vegetated;2;13924;13790;134;0;0;2;0.009623671
+60a;t78;non-veg;High marsh;Aug;non-vegetated;3;13924;13502;422;0;0;3;
+60a;t78;non-veg;High marsh;Aug;non-vegetated;4;13804;13587;217;0;0;4;
+60b;t78;non-veg;High marsh;Aug;non-vegetated;1;14041;13865;176;0;0;1;0.01253472
+60b;t78;non-veg;High marsh;Aug;non-vegetated;2;14041;13923;118;0;0;2;0.00840396
+60b;t78;non-veg;High marsh;Aug;non-vegetated;3;14041;13815;226;0;0;3;
+60b;t78;non-veg;High marsh;Aug;non-vegetated;4;13920;12807;1113;0;0;4;
+6a;t50;veg;Low marsh;Aug;Spartina anglica;1;13339;8107;5232;0;0;1;0.392233301
+6a;t50;veg;Low marsh;Aug;Spartina anglica;2;13339;13307;32;0;0;2;0.00239898
+6a;t50;veg;Low marsh;Aug;Spartina anglica;3;13339;11924;1409;0;6;3;
+6a;t50;veg;Low marsh;Aug;Spartina anglica;4;13224;12991;231;0;2;4;
+6b;t50;veg;Low marsh;Aug;Spartina anglica;1;13807;8917;4890;0;0;1;0.354168176
+6b;t50;veg;Low marsh;Aug;Spartina anglica;2;13807;13745;62;0;0;2;0.004490476
+6b;t50;veg;Low marsh;Aug;Spartina anglica;3;13807;12776;1017;0;14;3;
+6b;t50;veg;Low marsh;Aug;Spartina anglica;4;13688;13101;587;0;0;4;
+7a;t40;veg;Low marsh;Aug;Spartina anglica;1;13573;11384;2189;0;0;1;0.161276063
+7a;t40;veg;Low marsh;Aug;Spartina anglica;2;13573;13065;508;0;0;2;0.037427245
+7a;t40;veg;Low marsh;Aug;Spartina anglica;3;13573;12337;1235;0;1;3;
+7a;t40;veg;Low marsh;Aug;Spartina anglica;4;13456;13219;232;0;5;4;
+7b;t40;veg;Low marsh;Aug;Spartina anglica;1;13573;11847;1726;0;0;1;0.127164223
+7b;t40;veg;Low marsh;Aug;Spartina anglica;2;13573;13538;35;0;0;2;0.002578649
+7b;t40;veg;Low marsh;Aug;Spartina anglica;3;13573;11971;1599;0;3;3;
+7b;t40;veg;Low marsh;Aug;Spartina anglica;4;13456;13351;85;0;20;4;
+8a;t49;veg;Low marsh;Aug;Spartina anglica;1;13690;11396;2294;0;0;1;0.167567568
+8a;t49;veg;Low marsh;Aug;Spartina anglica;2;13690;13662;28;0;0;2;0.002045289
+8a;t49;veg;Low marsh;Aug;Spartina anglica;3;13690;12307;1383;0;0;3;
+8a;t49;veg;Low marsh;Aug;Spartina anglica;4;13572;13073;498;0;1;4;
+8b;t49;veg;Low marsh;Aug;Spartina anglica;1;14041;11519;2522;0;0;1;0.179616836
+8b;t49;veg;Low marsh;Aug;Spartina anglica;2;14041;13527;514;0;0;2;0.036607079
+8b;t49;veg;Low marsh;Aug;Spartina anglica;3;14041;12006;2035;0;0;3;
+8b;t49;veg;Low marsh;Aug;Spartina anglica;4;13920;11932;1988;0;0;4;
+9a;t35;veg;Low marsh;Aug;Spartina anglica;1;13339;10446;2893;0;0;1;0.216882825
+9a;t35;veg;Low marsh;Aug;Spartina anglica;2;13339;13271;68;0;0;2;0.005097833
+9a;t35;veg;Low marsh;Aug;Spartina anglica;3;13339;11273;2066;0;0;3;
+9a;t35;veg;Low marsh;Aug;Spartina anglica;4;13224;12087;1136;0;1;4;
+9b;t35;veg;Low marsh;Aug;Spartina anglica;1;13573;10403;3170;0;0;1;0.233551905
+9b;t35;veg;Low marsh;Aug;Spartina anglica;2;13573;13277;296;0;0;2;0.021808001
+9b;t35;veg;Low marsh;Aug;Spartina anglica;3;13573;12984;587;0;2;3;
+9b;t35;veg;Low marsh;Aug;Spartina anglica;4;13456;13429;23;0;4;4;
+10a;t42;veg;Low marsh;Oct;Spartina anglica;1;13456;11647;1808;0;1;1;0.134373839
+10a;t42;veg;Low marsh;Oct;Spartina anglica;2;13456;12429;1027;0;0;2;0.07632283
+10a;t42;veg;Low marsh;Oct;Spartina anglica;3;13456;13409;45;0;2;3;
+10a;t42;veg;Low marsh;Oct;Spartina anglica;4;13340;13279;60;0;1;4;
+10b;t42;veg;Low marsh;Oct;Spartina anglica;1;13456;12773;683;0;0;1;0.050758026
+10b;t42;veg;Low marsh;Oct;Spartina anglica;2;13456;13448;8;0;0;2;0.00059453
+10b;t42;veg;Low marsh;Oct;Spartina anglica;3;13456;13393;63;0;0;3;
+10b;t42;veg;Low marsh;Oct;Spartina anglica;4;13340;13263;76;0;1;4;
+11a;t47;veg;High marsh;Oct;Spartina anglica;1;13222;13222;0;0;0;1;0
+11a;t47;veg;High marsh;Oct;Spartina anglica;2;13222;13222;0;0;0;2;0
+11a;t47;veg;High marsh;Oct;Spartina anglica;3;13222;13215;0;0;7;3;
+11a;t47;veg;High marsh;Oct;Spartina anglica;4;13108;13101;7;0;0;4;
+11b;t47;veg;High marsh;Oct;Spartina anglica;1;13222;13222;0;0;0;1;0
+11b;t47;veg;High marsh;Oct;Spartina anglica;2;13222;13222;0;0;0;2;0
+11b;t47;veg;High marsh;Oct;Spartina anglica;3;13222;13221;0;0;1;3;
+11b;t47;veg;High marsh;Oct;Spartina anglica;4;13108;13105;3;0;0;4;
+12a;t28;veg;High marsh;Oct;Spartina anglica;1;14041;13810;231;0;0;1;0.01645182
+12a;t28;veg;High marsh;Oct;Spartina anglica;2;14041;13921;118;0;2;2;0.008405157
+12a;t28;veg;High marsh;Oct;Spartina anglica;3;14041;13967;34;0;40;3;
+12a;t28;veg;High marsh;Oct;Spartina anglica;4;13920;13913;7;0;0;4;
+12b;t28;veg;High marsh;Oct;Spartina anglica;1;13339;13335;4;0;0;1;0.000299873
+12b;t28;veg;High marsh;Oct;Spartina anglica;2;13339;13338;1;0;0;2;7.49681E-05
+12b;t28;veg;High marsh;Oct;Spartina anglica;3;13339;13315;13;0;11;3;
+12b;t28;veg;High marsh;Oct;Spartina anglica;4;13224;13145;79;0;0;4;
+13a;t34;veg;High marsh;Oct;Spartina anglica;1;13807;13765;37;0;5;1;0.002680771
+13a;t34;veg;High marsh;Oct;Spartina anglica;2;13807;13801;6;0;0;2;0.000434562
+13a;t34;veg;High marsh;Oct;Spartina anglica;3;13807;13762;38;0;7;3;
+13a;t34;veg;High marsh;Oct;Spartina anglica;4;13688;13679;8;0;1;4;
+13b;t34;veg;High marsh;Oct;Spartina anglica;1;13456;13448;8;0;0;1;0.00059453
+13b;t34;veg;High marsh;Oct;Spartina anglica;2;13456;13456;0;0;0;2;0
+13b;t34;veg;High marsh;Oct;Spartina anglica;3;13456;13455;1;0;0;3;
+13b;t34;veg;High marsh;Oct;Spartina anglica;4;13340;13259;67;0;14;4;
+14a;t33;veg;High marsh;Oct;Spartina anglica;1;13456;13448;8;0;0;1;0.00059453
+14a;t33;veg;High marsh;Oct;Spartina anglica;2;13456;13456;0;0;0;2;0
+14a;t33;veg;High marsh;Oct;Spartina anglica;3;13456;13431;2;0;23;3;
+14a;t33;veg;High marsh;Oct;Spartina anglica;4;13340;13244;96;0;0;4;
+14b;t33;veg;High marsh;Oct;Spartina anglica;1;13924;13804;120;0;0;1;0.008618213
+14b;t33;veg;High marsh;Oct;Spartina anglica;2;13924;13619;305;0;0;2;0.021904625
+14b;t33;veg;High marsh;Oct;Spartina anglica;3;13924;13764;147;0;13;3;
+14b;t33;veg;High marsh;Oct;Spartina anglica;4;13804;13612;192;0;0;4;
+15a;t44;veg;High marsh;Oct;Spartina anglica;1;13690;13685;5;0;0;1;0.00036523
+15a;t44;veg;High marsh;Oct;Spartina anglica;2;13690;13662;0;0;28;2;
+15a;t44;veg;High marsh;Oct;Spartina anglica;3;13690;13677;6;0;7;3;
+15a;t44;veg;High marsh;Oct;Spartina anglica;4;13572;13310;262;0;0;4;
+15b;t44;veg;High marsh;Oct;Spartina anglica;1;13222;13222;0;0;0;1;0
+15b;t44;veg;High marsh;Oct;Spartina anglica;2;13222;13222;0;0;0;2;
+15b;t44;veg;High marsh;Oct;Spartina anglica;3;13222;13186;1;0;35;3;
+15b;t44;veg;High marsh;Oct;Spartina anglica;4;13108;13024;84;0;0;4;
+16a;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13924;13772;152;0;0;1;0.010916403
+16a;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13924;13795;74;0;55;2;0.005335641
+16a;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13924;13901;23;0;0;3;
+16a;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13804;13788;16;0;0;4;
+16b;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;13155;301;0;0;1;0.022369203
+16b;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13440;16;0;0;2;0.001189061
+16b;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13428;3;0;25;3;
+16b;t72;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13336;0;0;4;4;
+17a;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;13452;4;0;0;1;0.000297265
+17a;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+17a;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13442;14;0;0;3;0.001040428
+17a;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13318;18;0;4;4;
+17b;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;1;14041;14006;34;0;1;1;0.002421652
+17b;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;2;14041;14037;2;0;2;2;0.00014246
+17b;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;3;14041;14041;0;0;0;3;0
+17b;t59;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13920;13887;32;0;1;4;
+18a;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;13400;54;0;2;1;0.004013676
+18a;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13443;13;0;0;2;0.000966112
+18a;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13449;7;0;0;3;0.000520214
+18a;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13296;1;0;43;4;
+18b;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;10573;2883;0;0;1;0.214253864
+18b;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13446;10;0;0;2;0.000743163
+18b;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13322;134;0;0;3;0.009958383
+18b;t64;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;12872;447;0;21;4;
+19a;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;13446;10;0;0;1;0.000743163
+19a;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+19a;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13418;21;0;17;3;
+19a;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13116;45;0;179;4;
+19b;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;12898;558;0;0;1;0.04146849
+19b;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+19b;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13441;15;0;0;3;
+19b;t75;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13304;28;0;8;4;
+1a;t41;veg;Pioneer zone;Oct;Spartina anglica;1;13456;13204;252;0;0;1;0.018727705
+1a;t41;veg;Pioneer zone;Oct;Spartina anglica;2;13456;13456;0;0;0;2;0
+1a;t41;veg;Pioneer zone;Oct;Spartina anglica;3;13456;13450;6;0;0;3;
+1a;t41;veg;Pioneer zone;Oct;Spartina anglica;4;13340;13327;13;0;0;4;
+1b;t41;veg;Pioneer zone;Oct;Spartina anglica;1;13339;13296;43;0;0;1;0.00322363
+1b;t41;veg;Pioneer zone;Oct;Spartina anglica;2;13339;13339;0;0;0;2;0
+1b;t41;veg;Pioneer zone;Oct;Spartina anglica;3;13339;13174;165;0;0;3;
+1b;t41;veg;Pioneer zone;Oct;Spartina anglica;4;13224;12933;291;0;0;4;
+20a;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13807;13805;2;0;0;1;0.000144854
+20a;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13807;13778;7;0;22;2;0.000507798
+20a;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13807;13784;19;0;4;3;
+20a;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13688;13656;32;0;0;4;
+20b;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;1;13456;13438;18;0;0;1;0.001337693
+20b;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+20b;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;3;13456;13456;0;0;0;3;
+20b;t65;veg;Pioneer zone;Oct;Atriplex portulacoides;4;13340;13212;22;0;106;4;
+21a;t55;veg;Low marsh;Oct;Atriplex portulacoides;1;13807;13762;19;0;26;1;0.00137871
+21a;t55;veg;Low marsh;Oct;Atriplex portulacoides;2;13807;13767;38;0;2;2;0.002752626
+21a;t55;veg;Low marsh;Oct;Atriplex portulacoides;3;13807;13744;56;0;7;3;
+21a;t55;veg;Low marsh;Oct;Atriplex portulacoides;4;13688;13678;10;0;0;4;
+21b;t55;veg;Low marsh;Oct;Atriplex portulacoides;1;13456;13455;0;0;1;1;0
+21b;t55;veg;Low marsh;Oct;Atriplex portulacoides;2;13456;13407;0;0;49;2;0
+21b;t55;veg;Low marsh;Oct;Atriplex portulacoides;3;13456;13442;0;0;14;3;
+21b;t55;veg;Low marsh;Oct;Atriplex portulacoides;4;13340;13331;9;0;0;4;
+22a;t69;veg;Low marsh;Oct;Atriplex portulacoides;1;13690;13505;184;0;1;1;0.013441449
+22a;t69;veg;Low marsh;Oct;Atriplex portulacoides;2;13690;13674;8;0;8;2;0.00058471
+22a;t69;veg;Low marsh;Oct;Atriplex portulacoides;3;13690;13661;2;0;27;3;
+22a;t69;veg;Low marsh;Oct;Atriplex portulacoides;4;13572;13512;60;0;0;4;
+22b;t69;veg;Low marsh;Oct;Atriplex portulacoides;1;13573;13545;28;0;0;1;0.002062919
+22b;t69;veg;Low marsh;Oct;Atriplex portulacoides;2;13573;13552;21;0;0;2;0.001547189
+22b;t69;veg;Low marsh;Oct;Atriplex portulacoides;3;13573;12255;1298;0;20;3;
+22b;t69;veg;Low marsh;Oct;Atriplex portulacoides;4;13456;13026;430;0;0;4;
+23a;t67;veg;Low marsh;Oct;Atriplex portulacoides;1;13339;13323;14;0;2;1;0.001049711
+23a;t67;veg;Low marsh;Oct;Atriplex portulacoides;2;13339;13339;0;0;0;2;0
+23a;t67;veg;Low marsh;Oct;Atriplex portulacoides;3;13339;13338;0;0;1;3;
+23a;t67;veg;Low marsh;Oct;Atriplex portulacoides;4;13224;13224;0;0;0;4;
+23b;t67;veg;Low marsh;Oct;Atriplex portulacoides;1;13339;13337;2;0;0;1;0.000149936
+23b;t67;veg;Low marsh;Oct;Atriplex portulacoides;2;13339;13339;0;0;0;2;0
+23b;t67;veg;Low marsh;Oct;Atriplex portulacoides;3;13339;13327;12;0;0;3;
+23b;t67;veg;Low marsh;Oct;Atriplex portulacoides;4;13224;13209;15;0;0;4;
+24a;t68;veg;Low marsh;Oct;Atriplex portulacoides;1;13807;13707;100;0;0;1;0.007242703
+24a;t68;veg;Low marsh;Oct;Atriplex portulacoides;2;13807;13735;72;0;0;2;0.005214746
+24a;t68;veg;Low marsh;Oct;Atriplex portulacoides;3;13807;13767;36;0;4;3;
+24a;t68;veg;Low marsh;Oct;Atriplex portulacoides;4;13688;13463;225;0;0;4;
+24b;t68;veg;Low marsh;Oct;Atriplex portulacoides;1;13456;13455;1;0;0;1;7.43163E-05
+24b;t68;veg;Low marsh;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+24b;t68;veg;Low marsh;Oct;Atriplex portulacoides;3;13456;13456;0;0;0;3;
+24b;t68;veg;Low marsh;Oct;Atriplex portulacoides;4;13340;13337;3;0;0;4;
+25a;t62;veg;Low marsh;Oct;Atriplex portulacoides;1;14041;13885;124;0;32;1;0.008851453
+25a;t62;veg;Low marsh;Oct;Atriplex portulacoides;2;14041;13923;118;0;0;2;0.00840396
+25a;t62;veg;Low marsh;Oct;Atriplex portulacoides;3;14041;13918;122;0;1;3;0.008689459
+25a;t62;veg;Low marsh;Oct;Atriplex portulacoides;4;13920;13773;132;0;15;4;
+25b;t62;veg;Low marsh;Oct;Atriplex portulacoides;1;13456;12874;582;0;0;1;0.043252081
+25b;t62;veg;Low marsh;Oct;Atriplex portulacoides;2;13456;13455;1;0;0;2;7.43163E-05
+25b;t62;veg;Low marsh;Oct;Atriplex portulacoides;3;13456;13439;17;0;0;3;0.001263377
+25b;t62;veg;Low marsh;Oct;Atriplex portulacoides;4;13340;12921;413;0;6;4;
+26a;t74;veg;High marsh;Oct;Atriplex portulacoides;1;13339;13197;142;0;0;1;0.010645476
+26a;t74;veg;High marsh;Oct;Atriplex portulacoides;2;13339;13339;0;0;0;2;0
+26a;t74;veg;High marsh;Oct;Atriplex portulacoides;3;13339;13331;8;0;0;3;0.000599745
+26a;t74;veg;High marsh;Oct;Atriplex portulacoides;4;13224;13126;58;0;40;4;
+26b;t74;veg;High marsh;Oct;Atriplex portulacoides;1;13573;13556;14;0;3;1;0.001031688
+26b;t74;veg;High marsh;Oct;Atriplex portulacoides;2;13573;13572;1;0;0;2;7.36757E-05
+26b;t74;veg;High marsh;Oct;Atriplex portulacoides;3;13573;13551;0;0;22;3;0
+26b;t74;veg;High marsh;Oct;Atriplex portulacoides;4;13456;13381;36;0;39;4;
+27a;t71;veg;High marsh;Oct;Atriplex portulacoides;1;13456;13456;0;0;0;1;0
+27a;t71;veg;High marsh;Oct;Atriplex portulacoides;2;13456;13456;0;0;0;2;0
+27a;t71;veg;High marsh;Oct;Atriplex portulacoides;3;13456;13456;0;0;0;3;
+27a;t71;veg;High marsh;Oct;Atriplex portulacoides;4;13340;13310;30;0;0;4;
+27b;t71;veg;High marsh;Oct;Atriplex portulacoides;1;13573;13410;163;0;0;1;0.012009136
+27b;t71;veg;High marsh;Oct;Atriplex portulacoides;2;13573;13449;124;0;0;2;0.009135784
+27b;t71;veg;High marsh;Oct;Atriplex portulacoides;3;13573;13496;67;0;10;3;
+27b;t71;veg;High marsh;Oct;Atriplex portulacoides;4;13456;13091;365;0;0;4;
+28a;t73;veg;High marsh;Oct;Atriplex portulacoides;1;13690;13685;3;0;2;1;0.00021917
+28a;t73;veg;High marsh;Oct;Atriplex portulacoides;2;13690;13690;0;0;0;2;0
+28a;t73;veg;High marsh;Oct;Atriplex portulacoides;3;13690;13668;0;0;22;3;
+28a;t73;veg;High marsh;Oct;Atriplex portulacoides;4;13572;13568;4;0;0;4;
+28b;t73;veg;High marsh;Oct;Atriplex portulacoides;1;13924;13322;601;0;1;1;0.043165984
+28b;t73;veg;High marsh;Oct;Atriplex portulacoides;2;13924;13833;91;0;0;2;0.006535478
+28b;t73;veg;High marsh;Oct;Atriplex portulacoides;3;13924;13679;199;0;46;3;
+28b;t73;veg;High marsh;Oct;Atriplex portulacoides;4;13804;13512;292;0;0;4;
+29a;t51;veg;High marsh;Oct;Atriplex portulacoides;1;13456;13446;10;0;0;1;0.000743163
+29a;t51;veg;High marsh;Oct;Atriplex portulacoides;2;13456;13455;1;0;0;2;7.43163E-05
+29a;t51;veg;High marsh;Oct;Atriplex portulacoides;3;13456;13381;32;0;43;3;0.002385745
+29a;t51;veg;High marsh;Oct;Atriplex portulacoides;4;13340;13296;40;0;4;4;
+29b;t51;veg;High marsh;Oct;Atriplex portulacoides;1;13573;12723;833;0;17;1;0.061448805
+29b;t51;veg;High marsh;Oct;Atriplex portulacoides;2;13573;13571;2;0;0;2;0.000147351
+29b;t51;veg;High marsh;Oct;Atriplex portulacoides;3;13573;13384;167;0;22;3;0.012323814
+29b;t51;veg;High marsh;Oct;Atriplex portulacoides;4;13456;13312;130;0;14;4;
+2a;t46;veg;Pioneer zone;Oct;Spartina anglica;1;13222;13050;172;0;0;1;0.013008622
+2a;t46;veg;Pioneer zone;Oct;Spartina anglica;2;13222;13222;0;0;0;2;0
+2a;t46;veg;Pioneer zone;Oct;Spartina anglica;3;13222;13216;6;0;0;3;
+2a;t46;veg;Pioneer zone;Oct;Spartina anglica;4;13108;13107;0;0;1;4;
+2b;t46;veg;Pioneer zone;Oct;Spartina anglica;1;13924;13829;95;0;0;1;0.006822752
+2b;t46;veg;Pioneer zone;Oct;Spartina anglica;2;13924;13911;13;0;0;2;0.00093364
+2b;t46;veg;Pioneer zone;Oct;Spartina anglica;3;13924;13843;75;0;6;3;
+2b;t46;veg;Pioneer zone;Oct;Spartina anglica;4;13804;13658;146;0;0;4;
+30a;t61;veg;High marsh;Oct;Atriplex portulacoides;1;13690;13607;81;0;2;1;0.005917592
+30a;t61;veg;High marsh;Oct;Atriplex portulacoides;2;13690;13639;51;0;0;2;0.003725347
+30a;t61;veg;High marsh;Oct;Atriplex portulacoides;3;13690;13641;10;0;39;3;
+30a;t61;veg;High marsh;Oct;Atriplex portulacoides;4;13572;13444;128;0;0;4;
+30b;t61;veg;High marsh;Oct;Atriplex portulacoides;1;13690;13690;0;0;0;1;0
+30b;t61;veg;High marsh;Oct;Atriplex portulacoides;2;13690;13690;0;0;0;2;0
+30b;t61;veg;High marsh;Oct;Atriplex portulacoides;3;13690;13652;0;0;38;3;
+30b;t61;veg;High marsh;Oct;Atriplex portulacoides;4;13572;13465;107;0;0;4;
+31a;t7;veg;Pioneer zone;Oct;Elymus athericus;1;13690;13654;34;0;2;1;0.002483928
+31a;t7;veg;Pioneer zone;Oct;Elymus athericus;2;13690;13690;0;0;0;2;0
+31a;t7;veg;Pioneer zone;Oct;Elymus athericus;3;13690;13685;5;0;0;3;0.00036523
+31a;t7;veg;Pioneer zone;Oct;Elymus athericus;4;13572;13188;384;0;0;4;
+31b;t7;veg;Pioneer zone;Oct;Elymus athericus;1;13807;13530;277;0;0;1;0.020062287
+31b;t7;veg;Pioneer zone;Oct;Elymus athericus;2;13807;13805;2;0;0;2;0.000144854
+31b;t7;veg;Pioneer zone;Oct;Elymus athericus;3;13807;13803;4;0;0;3;0.000289708
+31b;t7;veg;Pioneer zone;Oct;Elymus athericus;4;13688;13675;12;0;1;4;
+32a;t25;veg;Pioneer zone;Oct;Elymus athericus;1;14041;12969;1072;0;0;1;0.076347838
+32a;t25;veg;Pioneer zone;Oct;Elymus athericus;2;14041;13918;123;0;0;2;0.00876006
+32a;t25;veg;Pioneer zone;Oct;Elymus athericus;3;14041;13922;119;0;0;3;
+32a;t25;veg;Pioneer zone;Oct;Elymus athericus;4;13920;13770;39;0;111;4;
+32b;t25;veg;Pioneer zone;Oct;Elymus athericus;1;13573;13565;8;0;0;1;0.000589405
+32b;t25;veg;Pioneer zone;Oct;Elymus athericus;2;13573;13573;0;0;0;2;0
+32b;t25;veg;Pioneer zone;Oct;Elymus athericus;3;13573;13573;0;0;0;3;
+32b;t25;veg;Pioneer zone;Oct;Elymus athericus;4;13456;13456;0;0;0;4;
+33a;t19;veg;Pioneer zone;Oct;Elymus athericus;1;13807;13778;28;0;1;1;0.002028104
+33a;t19;veg;Pioneer zone;Oct;Elymus athericus;2;13807;13770;37;0;0;2;0.0026798
+33a;t19;veg;Pioneer zone;Oct;Elymus athericus;3;13807;13775;8;0;24;3;
+33a;t19;veg;Pioneer zone;Oct;Elymus athericus;4;13688;13619;69;0;0;4;
+33b;t19;veg;Pioneer zone;Oct;Elymus athericus;1;13456;13449;0;0;7;1;0
+33b;t19;veg;Pioneer zone;Oct;Elymus athericus;2;13456;13452;4;0;0;2;0.000297265
+33b;t19;veg;Pioneer zone;Oct;Elymus athericus;3;13456;13410;46;0;0;3;
+33b;t19;veg;Pioneer zone;Oct;Elymus athericus;4;13340;13304;36;0;0;4;
+34a;t14;veg;Pioneer zone;Oct;Elymus athericus;1;14041;13980;58;0;3;1;0.004131643
+34a;t14;veg;Pioneer zone;Oct;Elymus athericus;2;14041;14025;16;0;0;2;0.00113952
+34a;t14;veg;Pioneer zone;Oct;Elymus athericus;3;14041;13998;43;0;0;3;
+34a;t14;veg;Pioneer zone;Oct;Elymus athericus;4;13920;13737;182;0;1;4;
+34b;t14;veg;Pioneer zone;Oct;Elymus athericus;1;13456;13455;0;0;1;1;0
+34b;t14;veg;Pioneer zone;Oct;Elymus athericus;2;13456;13456;0;0;0;2;0
+34b;t14;veg;Pioneer zone;Oct;Elymus athericus;3;13456;13441;11;0;4;3;
+34b;t14;veg;Pioneer zone;Oct;Elymus athericus;4;13340;13326;1;0;13;4;
+35a;t24;veg;Pioneer zone;Oct;Elymus athericus;1;13456;13418;38;0;0;1;0.002824019
+35a;t24;veg;Pioneer zone;Oct;Elymus athericus;2;13456;13456;0;0;0;2;0
+35a;t24;veg;Pioneer zone;Oct;Elymus athericus;3;13456;13383;62;0;11;3;
+35a;t24;veg;Pioneer zone;Oct;Elymus athericus;4;13340;12744;596;0;0;4;
+35b;t24;veg;Pioneer zone;Oct;Elymus athericus;1;13807;12538;1269;0;0;1;0.091909901
+35b;t24;veg;Pioneer zone;Oct;Elymus athericus;2;13807;13565;242;0;0;2;0.017527341
+35b;t24;veg;Pioneer zone;Oct;Elymus athericus;3;13807;13740;53;0;14;3;
+35b;t24;veg;Pioneer zone;Oct;Elymus athericus;4;13688;13037;539;0;112;4;
+36a;t21;veg;Low marsh;Oct;Elymus athericus;1;13573;13572;1;0;0;1;7.36757E-05
+36a;t21;veg;Low marsh;Oct;Elymus athericus;2;13573;13573;0;0;0;2;
+36a;t21;veg;Low marsh;Oct;Elymus athericus;3;13573;13573;0;0;0;3;
+36a;t21;veg;Low marsh;Oct;Elymus athericus;4;13456;13449;1;0;6;4;
+36b;t21;veg;Low marsh;Oct;Elymus athericus;1;13924;13907;17;0;0;1;0.001220914
+36b;t21;veg;Low marsh;Oct;Elymus athericus;2;13924;13920;4;0;0;2;
+36b;t21;veg;Low marsh;Oct;Elymus athericus;3;13924;13906;18;0;0;3;
+36b;t21;veg;Low marsh;Oct;Elymus athericus;4;13804;13664;140;0;0;4;
+37a;t23;veg;Low marsh;Oct;Elymus athericus;1;13573;13454;115;0;4;1;0.008475201
+37a;t23;veg;Low marsh;Oct;Elymus athericus;2;13573;13565;6;0;2;2;0.000442119
+37a;t23;veg;Low marsh;Oct;Elymus athericus;3;13573;13489;81;0;3;3;
+37a;t23;veg;Low marsh;Oct;Elymus athericus;4;13456;13369;87;0;0;4;
+37b;t23;veg;Low marsh;Oct;Elymus athericus;1;13573;13538;33;0;2;1;0.002431656
+37b;t23;veg;Low marsh;Oct;Elymus athericus;2;13573;13572;1;0;0;2;7.36757E-05
+37b;t23;veg;Low marsh;Oct;Elymus athericus;3;13573;13554;0;0;19;3;
+37b;t23;veg;Low marsh;Oct;Elymus athericus;4;13456;13158;298;0;0;4;
+38a;t4;veg;Low marsh;Oct;Elymus athericus;1;13573;13566;7;0;0;1;0.00051573
+38a;t4;veg;Low marsh;Oct;Elymus athericus;2;13573;13573;0;0;0;2;0
+38a;t4;veg;Low marsh;Oct;Elymus athericus;3;13573;13560;4;0;9;3;
+38a;t4;veg;Low marsh;Oct;Elymus athericus;4;13456;13386;70;0;0;4;
+38b;t4;veg;Low marsh;Oct;Elymus athericus;1;13456;13403;53;0;0;1;0.003938763
+38b;t4;veg;Low marsh;Oct;Elymus athericus;2;13456;13454;2;0;0;2;0.000148633
+38b;t4;veg;Low marsh;Oct;Elymus athericus;3;13456;11933;1521;0;2;3;
+38b;t4;veg;Low marsh;Oct;Elymus athericus;4;13340;11390;1950;0;0;4;
+39a;t22;veg;Low marsh;Oct;Elymus athericus;1;13456;13157;299;0;0;1;0.022220571
+39a;t22;veg;Low marsh;Oct;Elymus athericus;2;13456;13407;49;0;0;2;0.003641498
+39a;t22;veg;Low marsh;Oct;Elymus athericus;3;13456;13369;87;0;0;3;
+39a;t22;veg;Low marsh;Oct;Elymus athericus;4;13340;13243;97;0;0;4;
+39b;t22;veg;Low marsh;Oct;Elymus athericus;1;13807;13788;19;0;0;1;0.001376114
+39b;t22;veg;Low marsh;Oct;Elymus athericus;2;13807;13580;227;0;0;2;0.016440936
+39b;t22;veg;Low marsh;Oct;Elymus athericus;3;13807;13506;301;0;0;3;
+39b;t22;veg;Low marsh;Oct;Elymus athericus;4;13688;13392;296;0;0;4;
+3a;t48;veg;Pioneer zone;Oct;Spartina anglica;1;13456;13235;221;0;0;1;0.0164239
+3a;t48;veg;Pioneer zone;Oct;Spartina anglica;2;13456;13455;1;0;0;2;7.43163E-05
+3a;t48;veg;Pioneer zone;Oct;Spartina anglica;3;13456;13343;113;0;0;3;0.008397741
+3a;t48;veg;Pioneer zone;Oct;Spartina anglica;4;13340;11896;1444;0;0;4;
+3b;t48;veg;Pioneer zone;Oct;Spartina anglica;1;13690;13575;115;0;0;1;0.008400292
+3b;t48;veg;Pioneer zone;Oct;Spartina anglica;2;13690;13679;11;0;0;2;0.000803506
+3b;t48;veg;Pioneer zone;Oct;Spartina anglica;3;13690;13561;128;0;1;3;0.009350573
+3b;t48;veg;Pioneer zone;Oct;Spartina anglica;4;13572;12172;1351;0;49;4;
+40a;t8;veg;Low marsh;Oct;Elymus athericus;1;13456;12950;506;0;0;1;0.037604043
+40a;t8;veg;Low marsh;Oct;Elymus athericus;2;13456;13455;0;0;1;2;0
+40a;t8;veg;Low marsh;Oct;Elymus athericus;3;13456;13456;0;0;0;3;0
+40a;t8;veg;Low marsh;Oct;Elymus athericus;4;13340;13334;6;0;0;4;
+40b;t8;veg;Low marsh;Oct;Elymus athericus;1;13690;13665;25;0;0;1;0.00182615
+40b;t8;veg;Low marsh;Oct;Elymus athericus;2;13690;13624;66;0;0;2;0.004821037
+40b;t8;veg;Low marsh;Oct;Elymus athericus;3;13690;13689;1;0;0;3;7.3046E-05
+40b;t8;veg;Low marsh;Oct;Elymus athericus;4;13572;13458;114;0;0;4;
+41a;t9;veg;High marsh;Oct;Elymus athericus;1;13456;13456;0;0;0;1;0
+41a;t9;veg;High marsh;Oct;Elymus athericus;2;13456;13456;0;0;0;2;0
+41a;t9;veg;High marsh;Oct;Elymus athericus;3;13456;13427;10;0;19;3;0.000744214
+41a;t9;veg;High marsh;Oct;Elymus athericus;4;13340;12348;992;0;0;4;
+41b;t9;veg;High marsh;Oct;Elymus athericus;1;13573;13556;14;0;3;1;0.001031688
+41b;t9;veg;High marsh;Oct;Elymus athericus;2;13573;13569;1;0;3;2;7.3692E-05
+41b;t9;veg;High marsh;Oct;Elymus athericus;3;13573;13565;5;0;3;3;0.00036846
+41b;t9;veg;High marsh;Oct;Elymus athericus;4;13456;13414;39;0;3;4;
+42a;t2;veg;High marsh;Oct;Elymus athericus;1;13456;12750;706;0;0;1;0.052467301
+42a;t2;veg;High marsh;Oct;Elymus athericus;2;13456;13456;0;0;0;2;0
+42a;t2;veg;High marsh;Oct;Elymus athericus;3;13456;13456;0;0;0;3;0
+42a;t2;veg;High marsh;Oct;Elymus athericus;4;13340;13276;48;0;16;4;
+42b;t2;veg;High marsh;Oct;Elymus athericus;1;13690;13508;182;0;0;1;0.013294375
+42b;t2;veg;High marsh;Oct;Elymus athericus;2;13690;13683;7;0;0;2;0.000511322
+42b;t2;veg;High marsh;Oct;Elymus athericus;3;13690;13688;2;0;0;3;0.000146092
+42b;t2;veg;High marsh;Oct;Elymus athericus;4;13572;13496;26;0;50;4;
+43a;t20;veg;High marsh;Oct;Elymus athericus;1;13573;13330;243;0;0;1;0.01790319
+43a;t20;veg;High marsh;Oct;Elymus athericus;2;13573;13517;56;0;0;2;0.004125838
+43a;t20;veg;High marsh;Oct;Elymus athericus;3;13573;13569;4;0;0;3;
+43a;t20;veg;High marsh;Oct;Elymus athericus;4;13456;13339;117;0;0;4;
+43b;t20;veg;High marsh;Oct;Elymus athericus;1;13222;13109;113;0;0;1;0.008546362
+43b;t20;veg;High marsh;Oct;Elymus athericus;2;13222;13218;4;0;0;2;0.000302526
+43b;t20;veg;High marsh;Oct;Elymus athericus;3;13222;13213;6;0;3;3;
+43b;t20;veg;High marsh;Oct;Elymus athericus;4;13108;13042;3;0;63;4;
+44a;t5;veg;High marsh;Oct;Elymus athericus;1;13573;13516;57;0;0;1;0.004199514
+44a;t5;veg;High marsh;Oct;Elymus athericus;2;13573;13573;0;0;0;2;0
+44a;t5;veg;High marsh;Oct;Elymus athericus;3;13573;13460;31;0;82;3;0.002297828
+44a;t5;veg;High marsh;Oct;Elymus athericus;4;13456;13438;18;0;0;4;
+44b;t5;veg;High marsh;Oct;Elymus athericus;1;13690;12676;1014;0;0;1;0.074068663
+44b;t5;veg;High marsh;Oct;Elymus athericus;2;13690;13520;170;0;0;2;0.012417823
+44b;t5;veg;High marsh;Oct;Elymus athericus;3;13690;13585;105;0;0;3;0.007669832
+44b;t5;veg;High marsh;Oct;Elymus athericus;4;13572;12721;849;0;2;4;
+45a;t11;veg;High marsh;Oct;Elymus athericus;1;13924;13688;235;0;1;1;0.016878546
+45a;t11;veg;High marsh;Oct;Elymus athericus;2;13924;13748;176;0;0;2;0.012640046
+45a;t11;veg;High marsh;Oct;Elymus athericus;3;13924;13815;75;0;34;3;
+45a;t11;veg;High marsh;Oct;Elymus athericus;4;13804;13551;250;0;3;4;
+45b;t11;veg;High marsh;Oct;Elymus athericus;1;13807;13748;12;0;47;1;0.000872093
+45b;t11;veg;High marsh;Oct;Elymus athericus;2;13807;13807;0;0;0;2;0
+45b;t11;veg;High marsh;Oct;Elymus athericus;3;13807;13606;146;0;55;3;
+45b;t11;veg;High marsh;Oct;Elymus athericus;4;13688;13032;650;0;6;4;
+46a;t85;non-veg;Pioneer zone;Oct;non-vegetated;1;13456;13202;254;0;0;1;0.018876338
+46a;t85;non-veg;Pioneer zone;Oct;non-vegetated;2;13456;13456;0;0;0;2;0
+46a;t85;non-veg;Pioneer zone;Oct;non-vegetated;3;13456;13368;64;0;24;3;
+46a;t85;non-veg;Pioneer zone;Oct;non-vegetated;4;13340;13181;159;0;0;4;
+46b;t85;non-veg;Pioneer zone;Oct;non-vegetated;1;13456;13172;284;0;0;1;0.021105826
+46b;t85;non-veg;Pioneer zone;Oct;non-vegetated;2;13456;13418;38;0;0;2;0.002824019
+46b;t85;non-veg;Pioneer zone;Oct;non-vegetated;3;13456;13039;417;0;0;3;
+46b;t85;non-veg;Pioneer zone;Oct;non-vegetated;4;13340;11502;1838;0;0;4;
+47a;t80;non-veg;Pioneer zone;Oct;non-vegetated;1;13456;13365;91;0;0;1;0.006762782
+47a;t80;non-veg;Pioneer zone;Oct;non-vegetated;2;13456;13452;4;0;0;2;0.000297265
+47a;t80;non-veg;Pioneer zone;Oct;non-vegetated;3;13456;13330;106;0;20;3;
+47a;t80;non-veg;Pioneer zone;Oct;non-vegetated;4;13340;13144;196;0;0;4;
+47b;t80;non-veg;Pioneer zone;Oct;non-vegetated;1;13690;13654;36;0;0;1;0.002629657
+47b;t80;non-veg;Pioneer zone;Oct;non-vegetated;2;13690;13612;78;0;0;2;0.005697589
+47b;t80;non-veg;Pioneer zone;Oct;non-vegetated;3;13690;13504;186;0;0;3;
+47b;t80;non-veg;Pioneer zone;Oct;non-vegetated;4;13572;13364;205;0;3;4;
+48a;t79;non-veg;Pioneer zone;Oct;non-vegetated;1;13924;13795;129;0;0;1;0.009264579
+48a;t79;non-veg;Pioneer zone;Oct;non-vegetated;2;13924;13880;44;0;0;2;0.003160011
+48a;t79;non-veg;Pioneer zone;Oct;non-vegetated;3;13924;13918;4;0;2;3;0.000287315
+48a;t79;non-veg;Pioneer zone;Oct;non-vegetated;4;13804;13794;10;0;0;4;
+48b;t79;non-veg;Pioneer zone;Oct;non-vegetated;1;13573;13572;1;0;0;1;7.36757E-05
+48b;t79;non-veg;Pioneer zone;Oct;non-vegetated;2;13573;13523;50;0;0;2;0.003683784
+48b;t79;non-veg;Pioneer zone;Oct;non-vegetated;3;13573;11707;1865;0;1;3;0.137415267
+48b;t79;non-veg;Pioneer zone;Oct;non-vegetated;4;13456;11529;1918;0;9;4;
+49a;t88;non-veg;Pioneer zone;Oct;non-vegetated;1;13924;13246;676;0;2;1;0.048556242
+49a;t88;non-veg;Pioneer zone;Oct;non-vegetated;2;13924;13872;52;0;0;2;0.003734559
+49a;t88;non-veg;Pioneer zone;Oct;non-vegetated;3;13924;13871;53;0;0;3;0.003806377
+49a;t88;non-veg;Pioneer zone;Oct;non-vegetated;4;13804;13404;385;0;15;4;
+49b;t88;non-veg;Pioneer zone;Oct;non-vegetated;1;13807;13622;90;0;95;1;0.006563594
+49b;t88;non-veg;Pioneer zone;Oct;non-vegetated;2;13807;13701;31;0;75;2;0.002257501
+49b;t88;non-veg;Pioneer zone;Oct;non-vegetated;3;13807;13672;16;0;119;3;0.001168907
+49b;t88;non-veg;Pioneer zone;Oct;non-vegetated;4;13688;13341;269;0;78;4;
+4a;t45;veg;Pioneer zone;Oct;Spartina anglica;1;13456;13456;0;0;0;1;0
+4a;t45;veg;Pioneer zone;Oct;Spartina anglica;2;13456;13456;0;0;0;2;0
+4a;t45;veg;Pioneer zone;Oct;Spartina anglica;3;13456;13456;0;0;0;3;
+4a;t45;veg;Pioneer zone;Oct;Spartina anglica;4;13340;13340;0;0;0;4;
+4b;t45;veg;Pioneer zone;Oct;Spartina anglica;1;13339;13334;5;0;0;1;0.000374841
+4b;t45;veg;Pioneer zone;Oct;Spartina anglica;2;13339;13326;13;0;0;2;0.000974586
+4b;t45;veg;Pioneer zone;Oct;Spartina anglica;3;13339;13068;269;0;2;3;
+4b;t45;veg;Pioneer zone;Oct;Spartina anglica;4;13224;11985;1226;0;13;4;
+50a;t89;non-veg;Pioneer zone;Oct;non-vegetated;1;13339;13292;47;0;0;1;0.003523503
+50a;t89;non-veg;Pioneer zone;Oct;non-vegetated;2;13339;13339;0;0;0;2;0
+50a;t89;non-veg;Pioneer zone;Oct;non-vegetated;3;13339;13324;15;0;0;3;0.001124522
+50a;t89;non-veg;Pioneer zone;Oct;non-vegetated;4;13224;13076;145;0;3;4;
+50b;t89;non-veg;Pioneer zone;Oct;non-vegetated;1;13573;13571;2;0;0;1;0.000147351
+50b;t89;non-veg;Pioneer zone;Oct;non-vegetated;2;13573;13572;1;0;0;2;7.36757E-05
+50b;t89;non-veg;Pioneer zone;Oct;non-vegetated;3;13573;13571;2;0;0;3;0.000147351
+50b;t89;non-veg;Pioneer zone;Oct;non-vegetated;4;13456;13434;21;0;1;4;
+51a;t82;non-veg;Low marsh;Oct;non-vegetated;1;13573;13191;381;0;1;1;0.028072502
+51a;t82;non-veg;Low marsh;Oct;non-vegetated;2;13573;12622;951;0;0;2;0.070065571
+51a;t82;non-veg;Low marsh;Oct;non-vegetated;3;13573;13089;484;0;0;3;
+51a;t82;non-veg;Low marsh;Oct;non-vegetated;4;13456;11740;1716;0;0;4;
+51b;t82;non-veg;Low marsh;Oct;non-vegetated;1;13690;11151;2539;0;0;1;0.185463842
+51b;t82;non-veg;Low marsh;Oct;non-vegetated;2;13690;13678;12;0;0;2;0.000876552
+51b;t82;non-veg;Low marsh;Oct;non-vegetated;3;13690;13516;174;0;0;3;
+51b;t82;non-veg;Low marsh;Oct;non-vegetated;4;13572;13115;457;0;0;4;
+52a;t84;non-veg;Low marsh;Oct;non-vegetated;1;13924;13819;105;0;0;1;0.007540937
+52a;t84;non-veg;Low marsh;Oct;non-vegetated;2;13924;13920;4;0;0;2;0.000287274
+52a;t84;non-veg;Low marsh;Oct;non-vegetated;3;13924;13922;2;0;0;3;
+52a;t84;non-veg;Low marsh;Oct;non-vegetated;4;13804;13739;65;0;0;4;
+52b;t84;non-veg;Low marsh;Oct;non-vegetated;1;13807;13807;0;0;0;1;0
+52b;t84;non-veg;Low marsh;Oct;non-vegetated;2;13807;13807;0;0;0;2;0
+52b;t84;non-veg;Low marsh;Oct;non-vegetated;3;13807;13802;2;0;3;3;
+52b;t84;non-veg;Low marsh;Oct;non-vegetated;4;13688;13569;119;0;0;4;
+53a;t81;non-veg;Low marsh;Oct;non-vegetated;1;13339;13331;0;0;8;1;0
+53a;t81;non-veg;Low marsh;Oct;non-vegetated;2;13339;13338;1;0;0;2;7.49681E-05
+53a;t81;non-veg;Low marsh;Oct;non-vegetated;3;13339;13211;115;0;13;3;
+53a;t81;non-veg;Low marsh;Oct;non-vegetated;4;13224;13092;123;0;9;4;
+53b;t81;non-veg;Low marsh;Oct;non-vegetated;1;13456;13449;2;0;5;1;0.000148688
+53b;t81;non-veg;Low marsh;Oct;non-vegetated;2;13456;13455;0;0;1;2;0
+53b;t81;non-veg;Low marsh;Oct;non-vegetated;3;13456;13425;29;0;2;3;
+53b;t81;non-veg;Low marsh;Oct;non-vegetated;4;13340;13277;59;0;4;4;
+54a;t83;non-veg;Low marsh;Oct;non-vegetated;1;13456;13309;147;0;0;1;0.010924495
+54a;t83;non-veg;Low marsh;Oct;non-vegetated;2;13456;13446;10;0;0;2;0.000743163
+54a;t83;non-veg;Low marsh;Oct;non-vegetated;3;13456;13418;38;0;0;3;0.002824019
+54a;t83;non-veg;Low marsh;Oct;non-vegetated;4;13340;12906;434;0;0;4;
+54b;t83;non-veg;Low marsh;Oct;non-vegetated;1;13807;12239;1568;0;0;1;0.113565583
+54b;t83;non-veg;Low marsh;Oct;non-vegetated;2;13807;13780;27;0;0;2;0.00195553
+54b;t83;non-veg;Low marsh;Oct;non-vegetated;3;13807;13762;45;0;0;3;0.003259216
+54b;t83;non-veg;Low marsh;Oct;non-vegetated;4;13688;13602;86;0;0;4;
+55a;t86;non-veg;Low marsh;Oct;non-vegetated;1;13339;13338;1;0;0;1;7.49681E-05
+55a;t86;non-veg;Low marsh;Oct;non-vegetated;2;13339;13319;20;0;0;2;0.001499363
+55a;t86;non-veg;Low marsh;Oct;non-vegetated;3;13339;13302;37;0;0;3;
+55a;t86;non-veg;Low marsh;Oct;non-vegetated;4;13224;13223;1;0;0;4;
+55b;t86;non-veg;Low marsh;Oct;non-vegetated;1;13690;13650;40;0;0;1;0.002921841
+55b;t86;non-veg;Low marsh;Oct;non-vegetated;2;13690;13670;20;0;0;2;0.00146092
+55b;t86;non-veg;Low marsh;Oct;non-vegetated;3;13690;13540;150;0;0;3;
+55b;t86;non-veg;Low marsh;Oct;non-vegetated;4;13572;13176;396;0;0;4;
+56a;t87;non-veg;High marsh;Oct;non-vegetated;1;13807;13806;1;0;0;1;7.2427E-05
+56a;t87;non-veg;High marsh;Oct;non-vegetated;2;13807;13806;0;0;1;2;0
+56a;t87;non-veg;High marsh;Oct;non-vegetated;3;13807;13800;7;0;0;3;
+56a;t87;non-veg;High marsh;Oct;non-vegetated;4;13688;13662;26;0;0;4;
+56b;t87;non-veg;High marsh;Oct;non-vegetated;1;13573;13551;22;0;0;1;0.001620865
+56b;t87;non-veg;High marsh;Oct;non-vegetated;2;13573;13573;0;0;0;2;0
+56b;t87;non-veg;High marsh;Oct;non-vegetated;3;13573;13448;114;0;11;3;
+56b;t87;non-veg;High marsh;Oct;non-vegetated;4;13456;11853;1597;0;6;4;
+57a;t76;non-veg;High marsh;Oct;non-vegetated;1;13573;13414;158;0;1;1;0.011641615
+57a;t76;non-veg;High marsh;Oct;non-vegetated;2;13573;13221;352;0;0;2;0.025933839
+57a;t76;non-veg;High marsh;Oct;non-vegetated;3;13573;13417;156;0;0;3;0.011493406
+57a;t76;non-veg;High marsh;Oct;non-vegetated;4;13456;13391;53;0;12;4;
+57b;t76;non-veg;High marsh;Oct;non-vegetated;1;13339;13330;5;0;4;1;0.000374953
+57b;t76;non-veg;High marsh;Oct;non-vegetated;2;13339;13318;21;0;0;2;0.001574331
+57b;t76;non-veg;High marsh;Oct;non-vegetated;3;13339;13019;320;0;0;3;0.023989804
+57b;t76;non-veg;High marsh;Oct;non-vegetated;4;13224;9646;3565;0;13;4;
+58a;t90;non-veg;High marsh;Oct;non-vegetated;1;13456;13340;116;0;0;1;0.00862069
+58a;t90;non-veg;High marsh;Oct;non-vegetated;2;13456;13456;0;0;0;2;0
+58a;t90;non-veg;High marsh;Oct;non-vegetated;3;13456;13456;0;0;0;3;0
+58a;t90;non-veg;High marsh;Oct;non-vegetated;4;13340;13304;31;0;5;4;
+58b;t90;non-veg;High marsh;Oct;non-vegetated;1;13456;13449;1;0;6;1;7.43494E-05
+58b;t90;non-veg;High marsh;Oct;non-vegetated;2;13456;13454;2;0;0;2;0.000148633
+58b;t90;non-veg;High marsh;Oct;non-vegetated;3;13456;13449;5;0;2;3;0.000371637
+58b;t90;non-veg;High marsh;Oct;non-vegetated;4;13340;13262;27;0;51;4;
+59a;t77;non-veg;High marsh;Oct;non-vegetated;1;13456;12972;484;0;0;1;0.035969084
+59a;t77;non-veg;High marsh;Oct;non-vegetated;2;13456;12860;596;0;0;2;0.044292509
+59a;t77;non-veg;High marsh;Oct;non-vegetated;3;13456;12666;761;0;29;3;
+59a;t77;non-veg;High marsh;Oct;non-vegetated;4;13340;12920;420;0;0;4;
+59b;t77;non-veg;High marsh;Oct;non-vegetated;1;13573;13493;80;0;0;1;0.005894054
+59b;t77;non-veg;High marsh;Oct;non-vegetated;2;13573;13564;9;0;0;2;0.000663081
+59b;t77;non-veg;High marsh;Oct;non-vegetated;3;13573;13510;46;0;17;3;
+59b;t77;non-veg;High marsh;Oct;non-vegetated;4;13456;11908;1522;0;26;4;
+5a;t27;veg;Pioneer zone;Oct;Spartina anglica;1;13456;12466;990;0;0;1;0.073573127
+5a;t27;veg;Pioneer zone;Oct;Spartina anglica;2;13456;13256;200;0;0;2;0.014863258
+5a;t27;veg;Pioneer zone;Oct;Spartina anglica;3;13456;13456;0;0;0;3;
+5a;t27;veg;Pioneer zone;Oct;Spartina anglica;4;13340;13340;0;0;0;4;
+5b;t27;veg;Pioneer zone;Oct;Spartina anglica;1;13573;13304;250;0;19;1;0.01844474
+5b;t27;veg;Pioneer zone;Oct;Spartina anglica;2;13573;13573;0;0;0;2;0
+5b;t27;veg;Pioneer zone;Oct;Spartina anglica;3;13573;13502;64;0;7;3;
+5b;t27;veg;Pioneer zone;Oct;Spartina anglica;4;13456;13290;166;0;0;4;
+60a;t78;non-veg;High marsh;Oct;non-vegetated;1;13456;13257;199;0;0;1;0.014788942
+60a;t78;non-veg;High marsh;Oct;non-vegetated;2;13456;13422;34;0;0;2;0.002526754
+60a;t78;non-veg;High marsh;Oct;non-vegetated;3;13456;12974;442;0;40;3;
+60a;t78;non-veg;High marsh;Oct;non-vegetated;4;13340;13177;163;0;0;4;
+60b;t78;non-veg;High marsh;Oct;non-vegetated;1;13690;13690;0;0;0;1;0
+60b;t78;non-veg;High marsh;Oct;non-vegetated;2;13690;13690;0;0;0;2;0
+60b;t78;non-veg;High marsh;Oct;non-vegetated;2;13690;13661;29;0;0;3;
+60b;t78;non-veg;High marsh;Oct;non-vegetated;4;13572;13496;76;0;0;4;
+6a;t50;veg;Low marsh;Oct;Spartina anglica;1;13690;13660;30;0;0;1;0.002191381
+6a;t50;veg;Low marsh;Oct;Spartina anglica;2;13690;13643;47;0;0;2;0.003433163
+6a;t50;veg;Low marsh;Oct;Spartina anglica;3;13690;13618;72;0;0;3;
+6a;t50;veg;Low marsh;Oct;Spartina anglica;4;13572;13028;544;0;0;4;
+6b;t50;veg;Low marsh;Oct;Spartina anglica;1;13456;13423;33;0;0;1;0.002452438
+6b;t50;veg;Low marsh;Oct;Spartina anglica;2;13456;13425;31;0;0;2;0.002303805
+6b;t50;veg;Low marsh;Oct;Spartina anglica;3;13456;12885;571;0;0;3;
+6b;t50;veg;Low marsh;Oct;Spartina anglica;4;13340;12411;929;0;0;4;
+7a;t40;veg;Low marsh;Oct;Spartina anglica;1;13924;13821;103;0;0;1;0.0073973
+7a;t40;veg;Low marsh;Oct;Spartina anglica;2;13924;13807;117;0;0;2;0.008402758
+7a;t40;veg;Low marsh;Oct;Spartina anglica;3;13924;13920;3;0;1;3;
+7a;t40;veg;Low marsh;Oct;Spartina anglica;4;13804;13774;30;0;0;4;
+7b;t40;veg;Low marsh;Oct;Spartina anglica;1;13456;13362;94;0;0;1;0.006985731
+7b;t40;veg;Low marsh;Oct;Spartina anglica;2;13456;13249;207;0;0;2;0.015383472
+7b;t40;veg;Low marsh;Oct;Spartina anglica;3;13456;13395;47;0;14;3;
+7b;t40;veg;Low marsh;Oct;Spartina anglica;4;13340;12913;427;0;0;4;
+8a;t49;veg;Low marsh;Oct;Spartina anglica;1;13456;13455;1;0;0;1;7.43163E-05
+8a;t49;veg;Low marsh;Oct;Spartina anglica;2;13456;13452;4;0;0;2;0.000297265
+8a;t49;veg;Low marsh;Oct;Spartina anglica;3;13456;13455;1;0;0;3;
+8a;t49;veg;Low marsh;Oct;Spartina anglica;4;13340;13290;50;0;0;4;
+8b;t49;veg;Low marsh;Oct;Spartina anglica;1;13690;12775;915;0;0;1;0.066837107
+8b;t49;veg;Low marsh;Oct;Spartina anglica;2;13690;13609;81;0;0;2;0.005916728
+8b;t49;veg;Low marsh;Oct;Spartina anglica;3;13690;13686;4;0;0;3;
+8b;t49;veg;Low marsh;Oct;Spartina anglica;4;13455;13254;201;0;0;4;
+9a;t35;veg;Low marsh;Oct;Spartina anglica;1;13690;13602;0;0;88;1;0
+9a;t35;veg;Low marsh;Oct;Spartina anglica;2;13690;13690;0;0;0;2;0
+9a;t35;veg;Low marsh;Oct;Spartina anglica;3;13690;13690;0;0;0;3;
+9a;t35;veg;Low marsh;Oct;Spartina anglica;4;13572;13571;1;0;0;4;
+9b;t35;veg;Low marsh;Oct;Spartina anglica;1;13573;13517;2;0;54;1;0.00014794
+9b;t35;veg;Low marsh;Oct;Spartina anglica;2;13573;13573;0;0;0;2;0
+9b;t35;veg;Low marsh;Oct;Spartina anglica;3;13573;13573;0;0;0;3;
+9b;t35;veg;Low marsh;Oct;Spartina anglica;4;13456;13456;0;0;0;4;

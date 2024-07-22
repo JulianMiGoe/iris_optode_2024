@@ -1,0 +1,726 @@
+---
+title: "iris_optode"
+author: "Julian Mittmann-Goetsch"
+date: "2024-01-10"
+output: pdf_document
+---
+
+# Install packages
+```{r message=FALSE, warning=FALSE}
+# Packages used to modify dataframes
+install.packages("psych")  
+install.packages("dplyr")
+install.packages("tidyverse")
+install.packages("rstatix")
+
+# Packages used to create plots
+install.packages("ggplot2")
+install.packages("ggpubr")
+install.packages("gridExtra")
+install.packages("ggpmisc")
+
+# Packages used to conduct statstical analysis
+install.packages("afex")
+install.packages("emmeans")
+install.packages("car") # used in previous analysis
+```
+
+# Load packages
+```{r message=FALSE, warning=FALSE}
+# Load all packages into the library
+library(psych)
+library(dplyr)
+library(tidyverse)
+library(rstatix)
+library(ggplot2)
+library(ggpubr)
+library(gridExtra) 
+library(ggpmisc)
+library(car)
+library(afex)
+library(emmeans)
+```
+
+# Load dataframes
+```{r message=FALSE, warning=FALSE}
+setwd("K:/PhD/data/WP1_redox/IRIS_ms/iris_optode_2024")
+
+# Mesocosm experiment data 
+df_tt_iris                <- read.csv("df_tt_iris.csv", dec=",", sep=";")              # IRIS results all depths tidal tank experiment 2021
+df_tt_dchange             <- read.csv("df_tt_dchange.csv", dec=".", sep=";")           # Delta change against group means of unplanted controls (PZ,LM,HM) in the tidal-tank study
+df_tt_ph                  <- read.csv("df_tt_ph.csv", dec=",", sep=";")                # pH values of the tidal tank study 2021
+
+# Field study data
+df_field_iris             <- read.csv("df_field_iris.csv", dec=",", sep=";")           # IRIS results all depths field-study 2021
+df_field_dchange          <- read.csv("df_field_dchange.csv", dec=".", sep=";")        # Delta change against group means of unplanted controls (PZ,LM,HM) in the field study
+df_field_ancillary        <- read.csv("df_field_ancillary.csv", dec=",",sep=";")       # Ancillary parameters from the field study 2021
+
+# Planar optode data
+df_optode_sa              <- read.csv("df_optode_sa.csv", dec="," ,sep=";")            # raw optode Data @Monica Wilson Spartina anglica
+df_optode_ap              <- read.csv("df_optode_ap.csv", dec="," ,sep=";")            # raw optode Data @Monica Wilson Atriplex portulacoides
+ 
+# Supplementary data
+df_DSK_iris               <- read.csv("df_DSK_iris.csv", dec=",", sep=";")             # IRIS results field study @Peter Mueller Diek-Sander-Koog from Mueller et al. 2020
+```
+
+# Plot theme
+```{r message=FALSE, warning=FALSE}
+theme_JM <-   theme(axis.text.y = element_text(colour = "black", size = 12, face = "bold"), 
+        axis.text.x = element_text(colour = "black", face = "bold", size = 12), 
+        legend.text = element_text(size = 12, face ="bold", colour ="black"), 
+        legend.position = "right", axis.title.y = element_text(face = "bold", size = 14), 
+        legend.title = element_text(size = 14, colour = "black", face = "bold"), 
+        panel.background = element_blank(), panel.border = element_rect(colour = "black", fill = NA, size = 1.2),
+        legend.key=element_blank())
+```
+
+# Adjust dataframes
+```{r message=FALSE, warning=FALSE}
+df_tt_iris <- df_tt_iris %>%
+  mutate_at(c(8:14), as.numeric)%>%
+  mutate_at(c(3:7), as.factor)
+
+df_field_ancillary <- df_field_ancillary %>% 
+  mutate_at(c(3:13), as.numeric)%>%
+  mutate_at(c(1,14), as.factor)
+
+df_field_iris <- df_field_iris %>%
+  mutate_at(c(4:9), as.numeric)
+
+df_DSK_iris <- df_DSK_iris %>%
+  mutate_at(c(2:3), as.factor) %>%
+  mutate_at(c(4:5), as.numeric)
+
+df_tt_ph <- df_tt_ph %>%
+  mutate_at(c(1:5), as.factor)%>%
+  mutate_at(c(6:8), as.numeric)
+
+df_optode_sa <- df_optode_sa %>%
+  mutate_at(c(2:13),as.numeric)
+
+df_optode_ap <- df_optode_ap %>%
+  mutate_at(c(2:13),as.numeric)
+```
+
+# Transform field-study dataframe
+```{r message=FALSE, warning=FALSE}
+# Field-study: Data transfomation (long-format)
+df_field_iris <- df_field_iris %>%                      # create vector with new ID 
+  mutate(IRIS.ID = rep(1:288)) 
+
+# Reorder horizontally 
+df_field_iris_long <- df_field_iris %>%                      
+  gather(key = "depth", value = "areareduced",X0.5cm, X5.10cm, X10.15cm, X15.20cm, X20.25cm, X25.30cm) %>%
+  convert_as_factor(IRIS.ID,ID,ID_monthly,ID_plot, depth)
+class(df_field_iris_long$depth)
+
+df_field_iris_long <- df_field_iris_long %>%
+  mutate_at(c(9), as.numeric)%>%
+  mutate_at(c(3,5:7), as.factor)
+
+# Reorder following soil profile (only of importance for plotting)
+df_field_iris_long$depth <- factor(df_field_iris_long$depth, levels = c("X0.5cm", "X5.10cm", "X10.15cm", "X15.20cm", "X20.25cm", "X25.30cm")) 
+df_field_iris_long$depth <- recode_factor(df_field_iris_long$depth,  X0.5cm = "0-5cm", X5.10cm = "5-10cm", X10.15cm = "10-15cm",X15.20cm = "15-20cm", X20.25cm = "20-25cm", X25.30cm = "25-30cm")
+df_field_iris_long$zone <- recode_factor(df_field_iris_long$zone,  pioneer = "pioneer zone", low_marsh = "low marsh", high_marsh = "high marsh")
+```
+
+# Figure 3: Tidal tank IRIS 
+```{r message=FALSE, warning=FALSE}
+setwd("K:/PhD/data/WP1_redox/IRIS_ms")
+
+# Figure 3 A all planting treatments tidal tank (plot_tt_all)
+df_tt_15 <- subset(df_tt_iris, !(abschnitt %in% c(2, 3, 4)))
+df_tt_all_sum<-describeBy(df_tt_15[,c('areareduced')], list(df_tt_15$Zone), fast=TRUE, mat=TRUE)
+df_tt_all_sum$zone <- recode_factor(df_tt_all_sum$group1,"Pioneer zone" = "Pioneer zone","Low marsh" = "Low marsh","High marsh" = "High marsh")
+
+plot_tt_all<-ggplot(data=df_tt_all_sum) +
+  geom_bar(aes(x=zone, y=mean, fill=zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_fill_manual(values=c( "#051585","#5377df","#93bdf0"), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Flooding treatment"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM  
+
+plot_tt_all
+
+# Figure 3 B only non-vegetated controls (plot_tt_nveg)
+factors_to_exclude <- c("veg")
+df_tt_non_veg <- df_tt_15[!(df_tt_15$Vegetation %in% factors_to_exclude), ]
+df_tt_non_veg_sum <- describeBy(df_tt_non_veg[, "areareduced"], list(df_tt_non_veg$Zone), fast = TRUE, mat = TRUE)
+df_tt_non_veg_sum$zone <- recode_factor(df_tt_non_veg_sum$group1,"Pioneer zone" = "Pioneer zone","Low marsh" = "Low marsh","High marsh" = "High marsh")
+
+plot_tt_nveg<-ggplot(data=df_tt_non_veg_sum) +
+  geom_bar(aes(x=zone, y=mean, fill=zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d" ), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Flooding treatment"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM  
+
+plot_tt_nveg
+
+# Figure 3 C delta change comapred to non-vegetated controls (plot_tt_dchange)
+df_tt_dchange <- df_tt_dchange[df_tt_dchange$plant_species != "soil", ]
+df_tt_dchange_sum <- df_tt_dchange %>%
+  group_by(plant_species, zone) %>%
+  summarise(n = n(),
+            mean = mean(X..change, na.rm=TRUE),
+            sd = sd(X..change,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_tt_dchange_sum$zone <- recode_factor(df_tt_dchange_sum$zone,  "pioneer" = "pioneer zone", "low-marsh" = "low marsh", "high-marsh" = "high marsh")
+df_tt_dchange_sum$plant_species  <- recode_factor(df_tt_dchange_sum$plant_species, "spartina anglica"="Spartina anglica", "atriplex portulacoides"="Atriplex portulacoides", "elymus athericus"="Elymus athericus")
+df_tt_dchange_sum$zone <- recode_factor(df_tt_dchange_sum$zone, "pioneer zone" = "Pioneer zone","low marsh" = "Low marsh","high marsh" = "High marsh")
+
+plot_tt_dchange<-ggplot(data=df_tt_dchange_sum) +
+  geom_bar(aes(x=zone, y=mean, fill=plant_species), stat="identity", position="dodge", alpha=0.5, show.legend = TRUE) +
+  scale_fill_manual(values=c("darkgreen", "palegreen3", "chartreuse1"), name="Plant species:", labels=c(expression(italic("Spartina anglica")),expression(italic("Atriplex portulacoides")),expression(italic("Elymus athericus"))))+
+  labs(color=expression(alpha*Omega), x= "Zone",y=expression(atop(Delta~Reduction~index~"(%change vs. unplanted control)")))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se, group=plant_species), width=0.4, colour="black", alpha=0.7, size=1,position = position_dodge(width = .9))+
+  theme_JM  +
+  theme(legend.position = "top")
+
+plot_tt_dchange
+
+plot_tt_dchange <- plot_tt_dchange + ylab(expression(atop(Delta ~ " Reduction index"," (%change vs. unplanted control)"))) +
+                      annotate("label", x=3.2, y=600, label="Plant: F=0.8511, p=n.s.\n Flood: F=16.1881, p<0.0001\n Plant x Flood: F=3.4092, p<0.01")
+plot_tt_nveg    <- plot_tt_nveg +  annotate("text", x = 0.6, y = 0.35, label = "[B]", size = 6, fontface = "bold")
+plot_tt_all     <- plot_tt_all +  annotate("text", x = 0.6, y = 0.35, label = "[A]", size = 6, fontface = "bold")
+plot_tt_dchange <- plot_tt_dchange +  annotate("text", x = 0.5, y = 600, label = "[C]", size = 6, fontface = "bold")
+
+theme_layout <- rbind(c(1, 2),c(3, 3)) 
+
+# Combine plots into a single panel
+plot_tt_final_panel <- grid.arrange(plot_tt_all, plot_tt_nveg, plot_tt_dchange, ncol=2, layout_matrix=theme_layout)
+```
+
+
+# Statistics Figure 3: Tidal tank IRIS 
+```{r message=FALSE, warning=FALSE}
+# # Statistics Figure 3A: ANOVA for all tidal tank IRIS sticks 
+# rmANOVA 
+df_tt_15$subject <- paste( df_tt_15$Zone, df_tt_15$Plant, df_tt_15$IRIS.ID, sep = "_")
+df_tt_15$subject <- as.factor(df_tt_15$subject)
+
+# Remove NAs to allow aov_car() to work
+df_tt_iris_aov <- df_tt_15[complete.cases(df_tt_15$areareduced), ]
+
+# Conduct repeated measures ANOVA Random factor is subject which is the ID of the stick segments
+stat_rm_anova_tt <- aov_car(areareduced ~ Plant*Zone + Error(subject),
+                    data = df_tt_iris_aov,
+                    id = "subject")
+# ANOVA results
+summary(stat_rm_anova_tt)
+
+#Anova Table (Type 3 tests)
+#Response: areareduced
+#           num Df den Df       MSE       F      ges    Pr(>F)    
+#Plant           3    108 0.0047312  0.8511 0.023096  0.468959    
+#Zone            2    108 0.0047312 16.1881 0.230639 7.096e-07 ***
+#Plant:Zone      6    108 0.0047312  3.4092 0.159239  0.004043 ** 
+
+qqPlot(residuals(stat_rm_anova_tt), main = "Normal Probability Plot of Residuals")
+
+# Post-hoc test results
+stat_zone_comp_tt <- emmeans(stat_rm_anova_tt, ~ Zone, contr = "pairwise", adjust = "tukey")
+stat_zone_comp_tt
+
+ #contrast                  estimate     SE  df t.ratio p.value
+ #High marsh - Low marsh     -0.0623 0.0154 108  -4.053  0.0003
+ #High marsh - Pioneer zone  -0.0844 0.0154 108  -5.485  <.0001
+ #Low marsh - Pioneer zone   -0.0220 0.0154 108  -1.433  0.3278
+
+stat_zone_plant_comp_tt <- emmeans(stat_rm_anova_tt, ~ Zone*Plant, contr = "pairwise", adjust = "tukey")
+stat_zone_plant_comp_tt
+
+# Statistics Figure 3B: Field study IRIS unplanted control plots only
+factors_to_exclude <- c("veg")
+df_tt_stat_veg <- df_tt_15[!(df_tt_15$Vegetation %in% factors_to_exclude), ]
+
+# Conduct repeated measures ANOVA Random factor is subject which is the ID of the stick segments
+stat_rm_anova_tt_unplanted <- aov_car(areareduced ~ Zone + Error(subject),
+                    data = df_tt_stat_veg,
+                    id = "subject")
+# ANOVA results
+summary(stat_rm_anova_tt_unplanted)
+
+#Anova Table (Type 3 tests)
+#Response: areareduced
+#     num Df den Df       MSE      F     ges    Pr(>F)    
+#Zone      2     27 0.0031886 11.875 0.46799 0.0001995 ***
+#---
+#Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+qqPlot(residuals(stat_rm_anova_tt_unplanted), main = "Normal Probability Plot of Residuals")
+
+# Post-hoc test results
+stat_zone_comp_tt_unplanted <- emmeans(stat_rm_anova_tt_unplanted, ~ Zone, contr = "pairwise", adjust = "tukey")
+stat_zone_comp_tt_unplanted
+
+ #contrast                  estimate     SE df t.ratio p.value
+ #High marsh - Low marsh     -0.1219 0.0253 27  -4.827  0.0001
+ #High marsh - Pioneer zone  -0.0463 0.0253 27  -1.833  0.1782
+ #Low marsh - Pioneer zone    0.0756 0.0253 27   2.994  0.0156
+
+```
+
+
+# Figure 4: Optode analysis 
+```{r message=FALSE, warning=FALSE}
+# Figure 4 A planar optode results Spartina anglica 
+df_optode_sa_long <- df_optode_sa %>%
+  pivot_longer(cols = starts_with("MeanROI"),
+               names_to = "ROI",
+               names_prefix = "ROI",
+               values_to = "O2") %>%
+  mutate(ROI = as.factor(ROI))%>%
+  select(-2:-13)%>%
+  filter(ROI %in% c("MeanROI1", "MeanROI3","MeanROI4", "MeanROI6")) %>%
+  mutate(ROI = factor(ROI, levels = c("MeanROI1", "MeanROI3","MeanROI4", "MeanROI6"), labels = c("Root 1", "Root 2","Root 3", "Bulk soil")))
+
+plot_optode_sa<-ggplot(df_optode_sa_long, aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  geom_line(aes(x = SlideNumber/10, y = O2, colour = ROI),size=1.5) +
+  labs(x = "Time", y = expression("% athmospheric O"[2])) +
+  scale_colour_manual(values = c("chartreuse3","green", "darkgreen", "tan3"), name = "ROI") +
+  theme_JM  +
+  theme(legend.position = "top")
+
+df_optode_sa_long_filtered <- df_optode_sa_long %>%
+  filter(SlideNumber >= 155 & SlideNumber <= 230)
+
+plot_optode_sa_sub<-ggplot(df_optode_sa_long_filtered, aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  geom_line(size = 1.5,show.legend = FALSE,aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  labs(x = "Time", y = expression("% athmospheric O"[2])) +
+  scale_colour_manual(values = c("chartreuse3", "green","darkgreen", "tan3"), name = "ROI") +
+  theme_JM  +
+  theme(legend.position = "top") +
+  xlab("Time [h]")
+
+plot_optode_sa + annotation_custom(ggplotGrob(plot_optode_sa_sub),xmin = 15, ymin = 20,xmax = 23, ymax=40)+ xlab("Time [h]")
+
+# Figure 4 B planar optode results Atriplex portulacoides
+df_optode_ap_long <- df_optode_ap %>%
+  pivot_longer(cols = starts_with("MeanROI"),
+               names_to = "ROI",
+               names_prefix = "ROI",
+               values_to = "O2") %>%
+  mutate(ROI = as.factor(ROI))%>%
+  select(-2:-11)%>%
+  filter(ROI %in% c("MeanROI2", "MeanROI3", "MeanROI4")) %>%
+  mutate(ROI = factor(ROI, levels = c("MeanROI2", "MeanROI3", "MeanROI4"), labels = c("Root 1", "Root 2", "Bulk soil")))
+
+df_optode_ap_long_filtered <- df_optode_ap_long %>%
+  filter(!SlideNumber == 40 & !SlideNumber == 159 )
+
+plot_optode_ap<-ggplot(df_optode_ap_long_filtered, aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  geom_line(aes(x = SlideNumber/10, y = O2, colour = ROI),size=1.5) +
+  labs(x = "Time", y = expression("% athmospheric O"[2])) +
+  scale_colour_manual(values = c("chartreuse3", "darkgreen", "tan3"), name = "ROI") +
+  theme_JM +
+  theme(legend.position = "top")+
+  ylim(-1,40)
+
+df_optode_ap_long_filtered <- df_optode_ap_long %>%
+  filter(SlideNumber >= 155 & SlideNumber <= 230)%>%
+  filter(!SlideNumber == 40 & !SlideNumber == 159 )
+
+plot_optode_ap_sub<-ggplot(df_optode_ap_long_filtered, aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  geom_line(size = 1.5,show.legend = FALSE,aes(x = SlideNumber/10, y = O2, colour = ROI)) +
+  labs(x = "Time", y = expression("% athmospheric O"[2])) +
+  scale_colour_manual(values = c("chartreuse3", "green","darkgreen", "tan3"), name = "ROI") +
+  theme_JM  +
+  theme(legend.position = "top") +
+  ylim(-1,10)+
+  xlab("Time [h]")
+
+plot_optode_ap + annotation_custom(ggplotGrob(plot_optode_ap_sub),xmin = 15, ymin = 20,xmax = 23, ymax=40)+ xlab("Time [h]")
+```
+
+# Figure 5: Field study IRIS 
+```{r message=FALSE, warning=FALSE}
+# Figure 5 A IRIS results field study all plots (plot_field_all)
+df_field_all <- df_field_iris_long %>%
+  group_by(zone) %>%
+  summarise(n = n(),
+            mean = mean(areareduced, na.rm=TRUE),
+            sd = sd(areareduced,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_field_all$zone  <- factor(df_field_all$zone, levels = c("pioneer zone", "low marsh", "high marsh"))
+df_field_all$zone  <- recode_factor(df_field_all$zone,  "pioneer zone" = "Pioneer zone","low marsh" = "Low marsh","high marsh" = "High marsh")
+
+plot_field_all<-ggplot(data=df_field_all) +
+  geom_bar(aes(x=zone, y=mean, fill=zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_fill_manual(values=c( "#051585","#5377df","#93bdf0"), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Zone"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM  
+
+plot_field_all
+
+# Figure 5 B IRIS results field study unplanted controls (plot_field_unplanted)
+df_field_unplanted<-describeBy(df_field_iris_long[,c('areareduced')], list(df_field_iris_long$zone,df_field_iris_long$vegetation), fast=TRUE, mat=TRUE)
+factors_to_exclude <- c("veg")
+df_field_subset <- df_field_iris_long[!(df_field_iris_long$vegetation %in% factors_to_exclude), ]
+df_field_unplanted<- describeBy(df_field_subset[, "areareduced"], list(df_field_subset$zone), fast = TRUE, mat = TRUE)
+df_field_unplanted$zone <- recode_factor(df_field_unplanted$group1,"pioneer zone" = "Pioneer zone","low marsh" = "Low marsh","high marsh" = "High marsh")
+
+plot_field_unplanted<-ggplot(data=df_field_unplanted) +
+  geom_bar(aes(x=zone, y=mean, fill=zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d" ), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Zone"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM  
+
+plot_field_unplanted
+
+# Figure 5 C Delta change IRIS results field study compared to unplanted controls (plot_field_dchange)
+df_field_dchange <-df_field_dchange %>%
+  mutate_at(c(6:11), as.numeric)%>%
+  mutate_at(c(2:5), as.factor)
+
+df_field_dchange_sum <- df_field_dchange %>%
+  group_by(zone, depth) %>%
+  summarise(n = n(),
+            mean = mean(X.change, na.rm=TRUE),
+            sd = sd(X.change,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_field_dchange_sum$zone  <- factor(df_field_dchange_sum$zone, levels = c("pioneer zone", "low marsh", "high marsh"))
+df_field_dchange_sum$depth <- recode_factor(df_field_dchange_sum$depth,  "0-5cm" = "0-5", "5-10cm" = "5-10", "10-15cm" = "10-15","15-20cm" = "15-20", "20-25cm" = "20-25", "25-30cm" = "25-30")
+df_field_dchange_sum$zone <- recode_factor(df_field_dchange_sum$zone,"pioneer zone" = "Pioneer zone","low marsh" = "Low marsh","high marsh" = "High marsh")
+
+plot_field_dchange<-ggplot(data=df_field_dchange_sum) +
+  geom_bar(aes(x=depth, y=mean, fill=depth), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  scale_fill_manual(values=c( "#d6f5d6", "#a9e6a9","#7ccc7c", "#4ca34c", "#2d6e2d", "#163916" ), name="zone")+ 
+  labs(color=expression(alpha*Omega), x= "Depth [cm]",y=expression(Delta~Reduction~index~"(% change vs. non-vegetated)"))+
+  geom_errorbar( aes(x=depth, ymin=mean-se, ymax=mean+se, group=depth), width=0.4, colour="black", alpha=0.7, size=1,position = position_dodge(width = .9))+
+  facet_wrap(~zone)+
+  theme_JM  +
+  ylab(expression(atop(Delta ~ " Reduction index"," (%change vs. unplanted control)")))
+
+plot_field_dchange
+
+plot_field_all <- plot_field_all +  annotate("text", x = 0.55, y = 0.35, label = "[A]", size = 6, fontface = "bold")
+plot_field_unplanted <- plot_field_unplanted +  annotate("text", x = 0.55, y = 0.35, label = "[B]", size = 6, fontface = "bold")
+plot_field_dchange <- plot_field_dchange +  annotate("text", x = 1, y = 1500, label = "[C]", size = 6, fontface = "bold") 
+
+layout <- rbind(c(1, 2), # First row contains plot1 and plot2
+                c(3, 3)) # Second row contains plot3 (spanning full width)
+
+# Combine plots into a single panel
+plot_field_final_panel <- grid.arrange(plot_field_all, plot_field_unplanted,plot_field_dchange, ncol=3, layout_matrix=layout)
+```
+# Statistics Field study
+```{r message=FALSE, warning=FALSE}
+# rmANOVA 
+df_field_iris_long$subject <- paste(df_field_iris_long$depth, df_field_iris_long$zone, df_field_iris_long$vegetation, df_field_iris_long$ID_monthly, sep = "_")
+df_field_iris_long$subject <- as.factor(df_field_iris_long$subject)
+
+# Remove NAs to allow aov_car() to work
+df_field_iris_aov <- df_field_iris_long[complete.cases(df_field_iris_long$areareduced), ]
+
+# Conduct repeated measures ANOVA Random factor is subject which is the ID of the stick segments
+stat_rm_anova_field <- aov_car(areareduced ~ vegetation*zone*depth + Error(subject),
+                    data = df_field_iris_aov,
+                    id = "subject")
+
+# Print ANOVA results
+summary(stat_rm_anova_field)
+
+#Anova Table (Type 3 tests)
+#Response: areareduced
+#                      num Df den Df      MSE       F      ges    Pr(>F)    
+#vegetation                 1    394 0.016551  4.3421 0.010900 0.0378257 *  
+#zone                       2    394 0.016551 73.9476 0.272922 < 2.2e-16 ***
+#depth                      5    394 0.016551 12.4628 0.136559 3.045e-11 ***
+#vegetation:zone            2    394 0.016551  2.0702 0.010399 0.1275360    
+#vegetation:depth           5    394 0.016551  0.9890 0.012395 0.4241315    
+#zone:depth                10    394 0.016551  3.6801 0.085425 0.0001011 ***
+#vegetation:zone:depth     10    394 0.016551  0.4655 0.011678 0.9118071 
+
+qqPlot(residuals(stat_rm_anova_field), main = "Normal Probability Plot of Residuals")
+
+# Calculate post hoc pairwise comparisons for vegetation factor
+stat_vegetation_comp <- emmeans(stat_rm_anova_field, ~ vegetation, contr = "pairwise", adjust = "tukey")
+stat_vegetation_comp
+
+# contrast        estimate     SE  df t.ratio p.value
+# (non-veg) - veg  -0.0259 0.0124 394  -2.084  0.0378
+
+stat_zone_comp_field <- emmeans(stat_rm_anova_field, ~ zone, contr = "pairwise", adjust = "tukey")
+stat_zone_comp_field
+
+# contrast                  estimate     SE  df t.ratio p.value
+# pioneer zone - low marsh   0.15893 0.0152 394  10.482  <.0001
+# pioneer zone - high marsh  0.16087 0.0152 394  10.567  <.0001
+# low marsh - high marsh     0.00195 0.0152 394   0.128  0.9910
+
+stat_depth_comp_field <- emmeans(stat_rm_anova_field, ~ depth, contr = "pairwise", adjust = "tukey")
+stat_depth_comp_field
+
+stat_depth_zone_comp_field <- emmeans(stat_rm_anova_field, ~ zone*depth, contr = "pairwise", adjust = "tukey")
+stat_depth_zone_comp_field
+
+# Statistics Figure 5A: Field study IRIS all plots  
+stat_fs_aov<-aov(areareduced~zone*vegetation*month*depth, data=df_field_iris_long)
+summary(stat_fs_aov)
+
+TukeyHSD(stat_fs_aov, which = "zone")
+
+# Statistics Figure 5B: Field study IRIS unplanted control plots only
+factors_to_exclude <- c("veg")
+df_field_iris_subset <- df_field_iris_long[!(df_field_iris_long$vegetation %in% factors_to_exclude), ]
+
+# Conduct repeated measures ANOVA Random factor is subject which is the ID of the stick segments
+stat_rm_anova_field_unplanted <- aov_car(areareduced ~ zone + Error(subject),
+                    data = df_field_iris_subset,
+                    id = "subject")
+# ANOVA results
+summary(stat_rm_anova_field_unplanted)
+
+qqPlot(residuals(stat_rm_anova_field_unplanted), main = "Normal Probability Plot of Residuals")
+
+# Post-hoc test results
+stat_zone_comp_field_unplanted <- emmeans(stat_rm_anova_field_unplanted, ~ zone, contr = "pairwise", adjust = "tukey")
+stat_zone_comp_field_unplanted
+
+# contrast                  estimate     SE  df t.ratio p.value
+# pioneer zone - low marsh    0.1549 0.0261 171   5.946  <.0001
+# pioneer zone - high marsh   0.1613 0.0276 171   5.845  <.0001
+# low marsh - high marsh      0.0064 0.0291 171   0.220  0.9737
+```
+
+
+# Figure 6: Linear regressions 
+```{r message=FALSE, warning=FALSE}
+# Figure 6a IRIS&AB
+plot_lm_iris_AB<-ggplot(df_field_ancillary, aes(x= AB, y=IRIS.new_total.)) +
+  geom_point(size=3) +
+  xlab(expression(paste("Aboveground biomass", "  ", ,"[","g*",cm^{-2},"]")))+
+  scale_y_continuous(name = "Reduction index", limits = c(0,1), breaks = seq(0, 1, 0.1)) +
+  theme(plot.title = element_text(hjust = 0.5), panel.background = element_blank(), axis.line = element_line(color="black"), axis.line.x = element_line(color="black"), text=element_text(size=50, family="TT Times New Roman")) +
+  theme_pubr()+
+  theme_JM 
+
+# Figure 6b IRIS&BB
+plot_lm_iris_BB<-ggplot(df_field_ancillary, aes(x= BB, y=IRIS.new_total.)) +
+  geom_point(size=3) +
+  geom_smooth(method="lm") +
+  xlab(expression(paste("Belowground biomass", "  ", ,"[","g*",cm^{-2},"]")))+
+  scale_y_continuous(name = "Reduction index", limits = c(0,1), breaks = seq(0, 1, 0.1)) +
+  theme(plot.title = element_text(hjust = 0.5), panel.background = element_blank(), axis.line = element_line(color="black"), axis.line.x = element_line(color="black"), text=element_text(size=50, family="TT Times New Roman")) +
+  theme_pubr()+
+  theme_JM 
+
+# Figure 6c IRIS&OM
+plot_lm_iris_OM<-ggplot(df_field_ancillary, aes(x= OM, y=IRIS.new_total.)) +
+  geom_point(size=3) +
+  geom_smooth(method="lm") +
+  scale_x_continuous(name = "OM [%]", limits = c(1, 8), breaks = seq(0, 8, 1)) +
+  scale_y_continuous(name = "Reduction index", limits = c(0,1), breaks = seq(0, 1, 0.1)) +
+  stat_cor(method = "pearson", label.x = 3, label.y = 30)+
+  theme(plot.title = element_text(hjust = 0.5), panel.background = element_blank(), axis.line = element_line(color="black"), axis.line.x = element_line(color="black"), text=element_text(size=50, family="TT Times New Roman")) +
+  theme_pubr()+
+  theme_JM 
+
+# Figure 6d IRIS&pH
+plot_lm_iris_pH<-ggplot(df_field_ancillary, aes(x= pH, y=IRIS.new_total.)) +
+  geom_point(size=3) +
+  xlab("pH")+
+  scale_y_continuous(name = "Reduction index", limits = c(0,1), breaks = seq(0, 1, 0.1)) +
+  theme(plot.title = element_text(hjust = 0.5), panel.background = element_blank(), axis.line = element_line(color="black"), axis.line.x = element_line(color="black"), text=element_text(size=50, family="TT Times New Roman")) +
+  theme_pubr()+
+  theme_JM 
+
+plot_lm_iris_BB 
+plot_lm_iris_AB 
+plot_lm_iris_pH
+plot_lm_iris_OM
+
+plot_field_lms_final_panel<-ggarrange(plot_lm_iris_AB, plot_lm_iris_BB, plot_lm_iris_OM, plot_lm_iris_pH,labels = c("A", "B","C","D"),ncol = 2, nrow = 2)
+```
+
+# Supplement Figure 1: IRIS results tidal tank top-soil
+```{r message=FALSE, warning=FALSE}
+# Filter data frame to only include Depths 0-5cm, 5-10cm and 10-15cm. 
+df_tt_a15_sum <- df_tt_iris %>%
+  filter(!Depth==1)%>%
+  group_by(Zone) %>%
+  summarise(n = n(),
+            mean = mean(areareduced, na.rm=TRUE),
+            sd = sd(areareduced,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_tt_a15_sum$Zone <- factor(df_tt_a15_sum$Zone, levels = c("Pioneer zone", "Low marsh", "High marsh"))
+plot_tt_top_supp<-ggplot(data=df_tt_a15_sum) +
+  geom_bar(aes(x=Zone, y=mean, fill=Zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_fill_manual(values=c( "#051585","#5377df","#93bdf0"), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Flooding treatment"))+
+  geom_errorbar( aes(x=Zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM 
+
+plot_tt_top_supp
+```
+# Supplement Figure 2: pH results tidal tank & field study
+```{r message=FALSE, warning=FALSE}
+df_field_ph_sum <- df_field_ancillary %>%
+  filter(!zone1=="mudflat")%>%
+  group_by(vegetation, zone1) %>%
+  summarise(n = n(),
+            mean = mean(pH, na.rm=TRUE),
+            sd = sd(pH,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_field_ph_sum$zone1 <- recode_factor(df_field_ph_sum$zone1,"pioneer" = "Pioneer zone","low_marsh" = "Low marsh","high_marsh" = "High marsh")
+
+df_tt_ph_sum <- df_tt_ph %>%
+  group_by(vegetation, zone) %>%
+  summarise(n = n(),
+            mean = mean(pH_Bcorrected, na.rm=TRUE),
+            sd = sd(pH_Bcorrected,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_tt_ph_sum$zone <- recode_factor(df_tt_ph_sum$zone,"pioneer" = "Pioneer zone","low-marsh" = "Low marsh","high-marsh" = "High marsh")
+
+plot_fs_pH<-ggplot(data=df_field_ph_sum) +
+  geom_bar(aes(x=zone1, y=mean, ,group=vegetation,fill=vegetation), stat="identity", position="dodge", alpha=0.5, show.legend = TRUE) +
+  scale_fill_manual(values=c("tan4","darkgreen"), name="Vegetation:")+
+  ylab(expression("pH"))+
+  xlab(expression("Zone"))+
+  geom_errorbar( aes(x=zone1, ymin=mean-se, ymax=mean+se, group=vegetation), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM +
+  ylim(0,9)
+
+plot_tt_pH<-ggplot(data=df_tt_ph_sum) +
+  geom_bar(aes(x=zone, y=mean, ,group=vegetation,fill=vegetation), stat="identity", position="dodge", alpha=0.5, show.legend = TRUE) +
+  scale_fill_manual(values=c("tan4","darkgreen"), name="Vegetation:")+
+  ylab(expression("pH"))+
+  xlab(expression("Flooding treatment"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se, group=vegetation), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM +
+  ylim(0,9)
+
+plot_fs_pH
+plot_tt_pH
+
+plot_ph_final <- ggarrange( plot_tt_pH, plot_fs_pH,labels = c("[A]", "[B]"),ncol = 2, nrow = 1)
+```
+
+# Supplement Figure 3: IRIS results field study elevational and depth gradients
+```{r message=FALSE, warning=FALSE}
+df_field_elevation <- df_field_iris_long %>%
+  group_by(zone,depth) %>%
+  summarise(n = n(),
+            mean = mean(areareduced, na.rm=TRUE),
+            sd = sd(areareduced,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+df_field_elevation$zone  <- factor(df_field_elevation$zone, levels = c("pioneer zone", "low marsh", "high marsh"))
+df_field_elevation$zone <- recode_factor(df_field_elevation$zone,  "pioneer zone" = "Pioneer zone","low marsh" = "Low marsh","high marsh" = "High marsh")
+
+plot_field_elevation<-ggplot(data=df_field_elevation) +
+  geom_bar(aes(x=zone, y=mean, fill=depth), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  labs(x="zone", y="mean")+
+  scale_y_continuous(limits = c(0, 0.5), breaks = seq(0, 0.5, 0.05))+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Zone"))+
+  geom_errorbar( aes(x=zone, ymin=mean-se, ymax=mean+se), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM+
+  facet_grid(~depth) +
+  scale_fill_manual(values=c("#e9c7af","#d89a6e","#cb7f48","#a7612f","#693f21","#362111"), name="zone")
+
+plot_field_elevation
+```
+
+# Supplement Figure 4: Reduction index and organic matter scatterplot with zones
+```{r message=FALSE, warning=FALSE}
+df_field_ancillary$zone <- recode_factor(df_field_ancillary$zone1, mudflat = "Mudflat", pioneer ="Pioneer zone", low_marsh="Low marsh",high_marsh = "High marsh")
+plot_correlation_iris_OM<-ggplot(df_field_ancillary, aes(x= OM, y=IRIS.new_total.)) +
+  geom_point(size=3, aes(color=zone)) +
+  geom_smooth(method = lm) +
+  theme_JM+
+  scale_x_continuous(name = "Organic matter content [%]", limits = c(0, 8), breaks = seq(0, 8, 1)) +
+  scale_y_continuous(name = "Reduction index", limits = c(0,1), breaks = seq(0, 1, 0.1)) +
+  scale_color_manual(values=c("tan4","orange", "blue", "darkgreen"), name="Zone:") 
+
+plot_correlation_iris_OM 
+```
+
+
+# Supplement Figure 5: IRIS results experiment comparisons
+```{r message=FALSE, warning=FALSE}
+#DSK data Figure S5 panel A
+describe(df_DSK_iris)
+df_DSK_sum<-describeBy(df_DSK_iris[,c('areareduced')], list(df_DSK_iris$zone), fast=TRUE, mat=TRUE)
+
+#tb_table2 <- tb_table2 %>%
+df_DSK_sum$zone  <- factor(df_DSK_sum$group1, levels = c("pioneer zone", "low marsh" ,"high marsh" )) 
+df_DSK_sum$zone <- recode_factor(df_DSK_sum$zone, "pioneer zone" = "Pioneer zone",  "low marsh"= "Low marsh", "high marsh" = "High marsh")
+
+
+plot_DSK<-ggplot(data=df_DSK_sum) +
+  geom_bar(aes(x=zone, y=mean/100, fill=zone), stat="identity", position="dodge", alpha=0.5, show.legend = FALSE) +
+  #scale_fill_manual(values=c( "#051585","#5377df","#93bdf0"), name="Zone")+
+  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d" ), name="zone")+
+  scale_y_continuous(limits = c(0, 0.35), breaks = seq(0, 0.35, 0.05))+
+  labs(x="Zone", y="mean")+
+  ylab(expression("Reduction index"))+
+  xlab(expression("Zone"))+
+  geom_errorbar( aes(x=zone, ymin=mean/100-se/100, ymax=mean/100+se/100, group=zone), width=0.4, colour="black", alpha=0.9, size=1,position = position_dodge(width = .9))+
+  theme_JM
+
+plot_DSK               <- plot_DSK +  annotate("text", x = 0.6, y = 0.3, label = "[A]", size = 6, fontface = "bold")  +  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d")) + ylim(0,0.3)
+plot_tt_all_supp       <- plot_tt_all  +  annotate("text", x = 0.6, y = 0.3, label = "[B]", size = 6, fontface = "bold")  +  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d")) + ylim(0,0.3)
+plot_field_all_supp    <- plot_field_all+  annotate("text", x = 0.6, y = 0.3, label = "[C]", size = 6, fontface = "bold")  +  scale_fill_manual(values=c("#543005","#bf812d","#dfc27d")) + ylim(0,0.3)
+
+layout <- rbind(c(1,2,3))
+plot_combined_supp <- grid.arrange(plot_DSK, plot_tt_all_supp,plot_field_all_supp, ncol=2, layout_matrix=layout)
+
+df_tt_a15 <- subset(df_tt_iris, !(abschnitt %in% c(1)))
+```
+
+# Additional Tables and analysis
+```{r message=FALSE, warning=FALSE}
+df_field_iris_tab <- df_field_iris_long %>%
+  group_by(zone, depth) %>%
+  summarise(n = n(),
+            mean = mean(areareduced, na.rm=TRUE),
+            sd = sd(areareduced,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+df_field_iris_tab <- df_tt_15 %>%
+  group_by(Zone,Plant) %>%
+  summarise(n = n(),
+            mean = mean(areareduced, na.rm=TRUE),
+            sd = sd(areareduced,na.rm=TRUE),
+            se = sd / sqrt(n),
+            ci = qt(0.975, df = n - 1) * sd / sqrt(n))
+
+# Additional correlation analysis
+cor(df_field_ancillary$OM, df_field_ancillary$IRIS.new_total., method="pearson", use="complete.obs")
+cor(df_field_ancillary$BB, df_field_ancillary$IRIS.new_total., method="pearson", use="complete.obs")
+cor(df_field_ancillary$OM, df_field_ancillary$IRIS.new_total., method="pearson", use="complete.obs")
+cor(df_field_ancillary$BB, df_field_ancillary$IRIS.new_total., method="pearson", use="complete.obs")
+```
+
