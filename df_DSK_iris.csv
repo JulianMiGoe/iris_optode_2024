@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Stage;zone;veg;% reduced 0-5 cm;areareduced
 2;pioneer zone;salicornia;6.20688;6.212025
 2;pioneer zone;salicornia;24.02186;8.41068
@@ -8,3 +9,15 @@ Stage;zone;veg;% reduced 0-5 cm;areareduced
 5;high marsh;elymus;0.599;0.14975
 5;high marsh;elymus;0;0
 5;high marsh;elymus;0;0
+=======
+Stage;zone;veg;% reduced 0-5 cm;areareduced
+2;pioneer zone;salicornia;6.20688;6.212025
+2;pioneer zone;salicornia;24.02186;8.41068
+2;pioneer zone;salicornia;3.26814;0.872035
+4;low marsh;puccinellia;32.76264;24.486515
+4;low marsh;puccinellia;10.8007;14.269315
+4;low marsh;puccinellia;11.66016;8.8306
+5;high marsh;elymus;0.599;0.14975
+5;high marsh;elymus;0;0
+5;high marsh;elymus;0;0
+>>>>>>> 304dd794ce818e18410c54f22f93bb6fab345e6f
