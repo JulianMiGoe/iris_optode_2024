@@ -5,26 +5,28 @@ date: "2024-01-10"
 output: pdf_document
 ---
 
-# Load packages
+# Install packages
 ```{r message=FALSE, warning=FALSE}
-#### Packages ####
 # Packages used to modify dataframes
-#install.packages("psych")  
-#install.packages("dplyr")
-#install.packages("tidyverse")
-#install.packages("rstatix")
+install.packages("psych")  
+install.packages("dplyr")
+install.packages("tidyverse")
+install.packages("rstatix")
 
 # Packages used to create plots
-#install.packages("ggplot2")
-#install.packages("ggpubr")
-#install.packages("gridExtra")
-#install.packages("ggpmisc")
+install.packages("ggplot2")
+install.packages("ggpubr")
+install.packages("gridExtra")
+install.packages("ggpmisc")
 
 # Packages used to conduct statstical analysis
-#install.packages("afex")
-#install.packages("emmeans")
-#install.packages("car") # used in previous analysis
+install.packages("afex")
+install.packages("emmeans")
+install.packages("car") # used in previous analysis
+```
 
+# Load packages
+```{r message=FALSE, warning=FALSE}
 # Load all packages into the library
 library(psych)
 library(dplyr)
@@ -61,8 +63,8 @@ df_optode_ap              <- read.csv("df_optode_ap.csv", dec="," ,sep=";")     
 df_DSK_iris               <- read.csv("df_DSK_iris.csv", dec=",", sep=";")             # IRIS results field study @Peter Mueller Diek-Sander-Koog from Mueller et al. 2020
 ```
 
-# Create theme for plots
-```{r}
+# Plot theme
+```{r message=FALSE, warning=FALSE}
 theme_JM <-   theme(axis.text.y = element_text(colour = "black", size = 12, face = "bold"), 
         axis.text.x = element_text(colour = "black", face = "bold", size = 12), 
         legend.text = element_text(size = 12, face ="bold", colour ="black"), 
@@ -102,26 +104,21 @@ df_optode_ap <- df_optode_ap %>%
 
 # Transform field-study dataframe
 ```{r message=FALSE, warning=FALSE}
-# field-study: Data transfomation (long-format)
+# Field-study: Data transfomation (long-format)
 df_field_iris <- df_field_iris %>%                      # create vector with new ID 
   mutate(IRIS.ID = rep(1:288)) 
 
-# reorder horizontally 
+# Reorder horizontally 
 df_field_iris_long <- df_field_iris %>%                      
   gather(key = "depth", value = "areareduced",X0.5cm, X5.10cm, X10.15cm, X15.20cm, X20.25cm, X25.30cm) %>%
   convert_as_factor(IRIS.ID,ID,ID_monthly,ID_plot, depth)
 class(df_field_iris_long$depth)
-#df_field_iris_long[,5] <- as.factor(df_field_iris_long[,5])    
-#df_field_iris_long[,6] <- as.factor(df_field_iris_long[,6])    
-#df_field_iris_long[,7] <- as.factor(df_field_iris_long[,7]) 
-#df_field_iris_long[,3] <- as.factor(df_field_iris_long[,3])
-#df_field_iris_long[,9] <- as.numeric(df_field_iris_long[,9])
 
 df_field_iris_long <- df_field_iris_long %>%
   mutate_at(c(9), as.numeric)%>%
   mutate_at(c(3,5:7), as.factor)
 
-# reorder following soil profile (only of importance for plotting)
+# Reorder following soil profile (only of importance for plotting)
 df_field_iris_long$depth <- factor(df_field_iris_long$depth, levels = c("X0.5cm", "X5.10cm", "X10.15cm", "X15.20cm", "X20.25cm", "X25.30cm")) 
 df_field_iris_long$depth <- recode_factor(df_field_iris_long$depth,  X0.5cm = "0-5cm", X5.10cm = "5-10cm", X10.15cm = "10-15cm",X15.20cm = "15-20cm", X20.25cm = "20-25cm", X25.30cm = "25-30cm")
 df_field_iris_long$zone <- recode_factor(df_field_iris_long$zone,  pioneer = "pioneer zone", low_marsh = "low marsh", high_marsh = "high marsh")
@@ -284,7 +281,7 @@ df_optode_sa_long <- df_optode_sa %>%
   mutate(ROI = as.factor(ROI))%>%
   select(-2:-13)%>%
   filter(ROI %in% c("MeanROI1", "MeanROI3","MeanROI4", "MeanROI6")) %>%
-  mutate(ROI = factor(ROI, levels = c("MeanROI1", "MeanROI3","MeanROI4", "MeanROI6"), labels = c("Root 1", "Root 2","Root 3", "Soil-control")))
+  mutate(ROI = factor(ROI, levels = c("MeanROI1", "MeanROI3","MeanROI4", "MeanROI6"), labels = c("Root 1", "Root 2","Root 3", "Bulk soil")))
 
 plot_optode_sa<-ggplot(df_optode_sa_long, aes(x = SlideNumber/10, y = O2, colour = ROI)) +
   geom_line(aes(x = SlideNumber/10, y = O2, colour = ROI),size=1.5) +
@@ -315,7 +312,7 @@ df_optode_ap_long <- df_optode_ap %>%
   mutate(ROI = as.factor(ROI))%>%
   select(-2:-11)%>%
   filter(ROI %in% c("MeanROI2", "MeanROI3", "MeanROI4")) %>%
-  mutate(ROI = factor(ROI, levels = c("MeanROI2", "MeanROI3", "MeanROI4"), labels = c("Root 1", "Root 2", "Soil-control")))
+  mutate(ROI = factor(ROI, levels = c("MeanROI2", "MeanROI3", "MeanROI4"), labels = c("Root 1", "Root 2", "Bulk soil")))
 
 df_optode_ap_long_filtered <- df_optode_ap_long %>%
   filter(!SlideNumber == 40 & !SlideNumber == 159 )
