@@ -1,7 +1,7 @@
 ## iris_optode_2024
 Repository to our manuscript "Root-Driven Soil Reduction in Wadden Sea Salt Marshes".
 
-Submitted to Wetlands journal 2024. 
+Submitted to Wetlands journal 2024. Accepted Oct 2024
 
 Authors: Julian Mittmann-Goetsch, Monica Wilson, Kai Jensen, Peter Mueller
 
